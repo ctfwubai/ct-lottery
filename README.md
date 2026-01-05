@@ -142,6 +142,9 @@
 > 1.当当前奖项抽取完成后，手机的开始抽奖功能会变成灰色，无法操作。
 >
 > 2.查看中奖名单，可以调出大屏上的中奖名单，但有前提条件，必须当前奖项全部抽取完毕可以使用。否则只支持大屏鼠标点击使用
+![Uploading image.png…]()
+
+
 <img width="464" height="947" alt="image" src="https://github.com/user-attachments/assets/aeb6dfa3-59b1-4aa2-939d-daf261282e70" />
 
 <img width="487" height="957" alt="image" src="https://github.com/user-attachments/assets/1c1ccc9c-a4a4-4994-9fb3-99e6b19ee8c5" />
