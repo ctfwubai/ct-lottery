@@ -32,7 +32,8 @@
 >
 > 2.可选指定人员，从中奖名单中跳过。这是避免中奖的人员不在现场，重新把机会留给现场人员。
 
-![image-20260104195758746](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260104195758746.png)
+<img width="1899" height="1054" alt="image" src="https://github.com/user-attachments/assets/a3fdac48-1bc4-466f-ad39-13eea0ae5cc7" />
+
 
 <img width="1797" height="1009" alt="image" src="https://github.com/user-attachments/assets/1377f5d0-f305-40d3-914c-3945c870a1ab" />
 
@@ -705,5 +706,7 @@ sudo ufw status                 # 查看状态
 3. 点击齿轮图标 ⚙️ 进入高级设置
 4. 输入高级设置密码（默认：`admin888`）
 
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ctfwubai/ct-lottery&type=date&legend=top-left)](https://www.star-history.com/#ctfwubai/ct-lottery&type=date&legend=top-left)
 
