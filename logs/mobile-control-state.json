@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "verifyCode": "123456",
+  "isLocked": false,
+  "isInLotteryPage": false,
+  "connectedDevice": null,
+  "lotteryStatus": 1,
+  "prizeInfo": {
+    "name": "三等奖",
+    "totalCount": 20,
+    "usedCount": 20,
+    "remainingCount": 0,
+    "isUsed": true,
+    "separateCount": {
+      "enable": true,
+      "countList": [
+        {
+          "id": "0",
+          "count": 20,
+          "isUsedCount": 0
+        }
+      ],
+      "singleDrawCount": 5
+    }
+  }
+}

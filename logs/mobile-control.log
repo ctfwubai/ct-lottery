@@ -1,0 +1,589 @@
+[2026-01-03 12:59:54] [verify_code] [MOBILE-1767445188165-f4h4gypsz] success 
+[2026-01-03 13:00:21] [verify_code] [MOBILE-1767445217135-26sh3ifha] success 
+[2026-01-03 13:04:14] [verify_code] [MOBILE-1767445440308-fh1io7jjz] success 
+[2026-01-03 13:04:47] [verify_code] [MOBILE-1767445484132-5u7my05pc] success 
+[2026-01-03 13:09:52] [verify_code] [MOBILE-1767445789488-r6t2j1e3h] success 
+[2026-01-03 13:10:21] [device_connect] [Android] success 
+[2026-01-03 13:10:24] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:10:28] [device_connect] [Android] success 
+[2026-01-03 13:10:32] [verify_code] [MOBILE-1767445824909-cl2n44cku] success 
+[2026-01-03 13:10:32] [device_connect] [Android] success 
+[2026-01-03 13:10:36] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:10:48] [verify_code] [MOBILE-1767445844169-c4q00pkgt] success 
+[2026-01-03 13:10:48] [device_connect] [Android] success 
+[2026-01-03 13:11:20] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:11:48] [device_connect] [Android] success 
+[2026-01-03 13:12:50] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:12:53] [device_connect] [Android] success 
+[2026-01-03 13:13:07] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:13:07] [device_connect] [Android] success 
+[2026-01-03 13:13:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:13:51] [device_connect] [Android] success 
+[2026-01-03 13:13:54] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:15:02] [verify_code] [MOBILE-1767446098168-412g2a893] success 
+[2026-01-03 13:15:02] [device_connect] [Android] success 
+[2026-01-03 13:20:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:21:25] [device_connect] [Android] success 
+[2026-01-03 13:21:27] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:25:37] [device_connect] [Android] success 
+[2026-01-03 13:25:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:27:41] [device_connect] [Android] success 
+[2026-01-03 13:27:43] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:34:37] [device_connect] [Android] success 
+[2026-01-03 13:34:49] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:34:52] [device_connect] [Android] success 
+[2026-01-03 13:34:56] [verify_code] [MOBILE-1767447289365-jdq386fgq] success 
+[2026-01-03 13:34:56] [device_connect] [Android] success 
+[2026-01-03 13:36:59] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:37:37] [device_connect] [Android] success 
+[2026-01-03 13:38:03] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:40:05] [device_connect] [Android] success 
+[2026-01-03 13:40:07] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:40:28] [device_connect] [Android] success 
+[2026-01-03 13:40:29] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:43:28] [device_connect] [Android] success 
+[2026-01-03 13:43:29] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 13:43:33] [device_connect] [Android] success 
+[2026-01-03 13:43:36] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:00:56] [device_connect] [Android] success 
+[2026-01-03 14:01:08] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:01:11] [device_connect] [Android] success 
+[2026-01-03 14:01:21] [device_connect] [Android] success 
+[2026-01-03 14:01:24] [verify_code] [MOBILE-1767448869180-zvrvv5v48] success 
+[2026-01-03 14:01:24] [device_connect] [Android] success 
+[2026-01-03 14:04:43] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:06:28] [device_connect] [Android] success 
+[2026-01-03 14:06:44] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:07:22] [device_connect] [Android] success 
+[2026-01-03 14:07:24] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:08:47] [device_connect] [Android] success 
+[2026-01-03 14:08:58] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 14:09:34] [device_connect] [Android] success 
+[2026-01-03 14:09:34] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 23:56:20] [verify_code] [MOBILE-1767484576750-frp3n1s3q] success 
+[2026-01-03 23:56:20] [device_connect] [Android] success 
+[2026-01-03 23:56:23] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 23:59:20] [device_connect] [Android] success 
+[2026-01-03 23:59:26] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-03 23:59:55] [device_connect] [Android] success 
+[2026-01-03 23:59:56] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:01:10] [verify_code] [MOBILE-1767484867038-ra7cla0d6] success 
+[2026-01-04 00:01:10] [device_connect] [Android] success 
+[2026-01-04 00:01:14] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:01:57] [device_connect] [Android] success 
+[2026-01-04 00:02:02] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:02:09] [verify_code] [MOBILE-1767484927091-1n8s4gxvb] success 
+[2026-01-04 00:02:09] [device_connect] [Android] success 
+[2026-01-04 00:02:32] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:04:28] [device_connect] [Android] success 
+[2026-01-04 00:04:30] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:07:59] [device_connect] [Android] success 
+[2026-01-04 00:08:03] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:08:35] [device_connect] [Android] success 
+[2026-01-04 00:08:39] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:08:42] [device_connect] [Android] success 
+[2026-01-04 00:08:44] [verify_code] [MOBILE-1767485320175-g6f19o6wb] success 
+[2026-01-04 00:08:44] [device_connect] [Android] success 
+[2026-01-04 00:09:47] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:09:55] [device_connect] [Android] success 
+[2026-01-04 00:10:17] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:11:37] [device_connect] [Android] success 
+[2026-01-04 00:11:59] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:13:45] [device_connect] [Android] success 
+[2026-01-04 00:13:48] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:14:29] [device_connect] [Android] success 
+[2026-01-04 00:15:02] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:15:36] [device_connect] [Android] success 
+[2026-01-04 00:15:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:16:38] [device_connect] [Android] success 
+[2026-01-04 00:17:21] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:18:39] [device_connect] [Android] success 
+[2026-01-04 00:18:45] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:19:05] [verify_code] [MOBILE-1767485942502-ygzyv9rd9] success 
+[2026-01-04 00:19:05] [device_connect] [Android] success 
+[2026-01-04 00:19:05] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:20:27] [device_connect] [Android] success 
+[2026-01-04 00:20:28] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:20:36] [device_connect] [Android] success 
+[2026-01-04 00:20:36] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:21:33] [device_connect] [Android] success 
+[2026-01-04 00:23:22] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:23:22] [device_connect] [Android] success 
+[2026-01-04 00:23:25] [device_connect] [Android] success 
+[2026-01-04 00:23:56] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:25:37] [device_connect] [Android] success 
+[2026-01-04 00:26:06] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:27:29] [device_connect] [Android] success 
+[2026-01-04 00:27:48] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:27:48] [device_connect] [Android] success 
+[2026-01-04 00:27:52] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:27:54] [device_connect] [Android] success 
+[2026-01-04 00:27:57] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:28:02] [device_connect] [Android] success 
+[2026-01-04 00:28:05] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:28:14] [device_connect] [Android] success 
+[2026-01-04 00:28:15] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:28:58] [device_connect] [Android] success 
+[2026-01-04 00:29:00] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:30:00] [verify_code] [MOBILE-1767486582983-1md33tb70] success 
+[2026-01-04 00:30:00] [device_connect] [Android] success 
+[2026-01-04 00:30:02] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:30:36] [device_connect] [Android] success 
+[2026-01-04 00:30:39] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:34:06] [device_connect] [Android] success 
+[2026-01-04 00:34:07] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:34:11] [verify_code] [MOBILE-1767486848995-j3hir8991] success 
+[2026-01-04 00:34:11] [device_connect] [Android] success 
+[2026-01-04 00:34:11] [device_connect] [Android] success 
+[2026-01-04 00:34:15] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:34:23] [device_connect] [Android] success 
+[2026-01-04 00:34:23] [device_connect] [Android] success 
+[2026-01-04 00:34:50] [verify_code] [MOBILE-1767486884896-xyhmewwvs] success 
+[2026-01-04 00:34:50] [device_connect] [Android] success 
+[2026-01-04 00:35:32] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:35:36] [device_connect] [Android] success 
+[2026-01-04 00:35:36] [device_connect] [Android] success 
+[2026-01-04 00:35:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:36:19] [device_connect] [Android] success 
+[2026-01-04 00:36:19] [device_connect] [Android] success 
+[2026-01-04 00:36:34] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:37:03] [device_connect] [Android] success 
+[2026-01-04 00:37:03] [device_connect] [Android] success 
+[2026-01-04 00:37:04] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:37:12] [device_connect] [Android] success 
+[2026-01-04 00:37:12] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:37:27] [verify_code] [MOBILE-1767487044847-dkuqsjtt2] success 
+[2026-01-04 00:37:27] [device_connect] [Android] success 
+[2026-01-04 00:37:59] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:38:48] [device_connect] [Android] success 
+[2026-01-04 00:38:48] [device_connect] [Android] success 
+[2026-01-04 00:38:56] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:38:59] [device_connect] [Android] success 
+[2026-01-04 00:39:11] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:39:27] [device_connect] [Android] success 
+[2026-01-04 00:39:28] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:39:40] [verify_code] [MOBILE-1767487176663-kjsdqdgj5] success 
+[2026-01-04 00:39:40] [device_connect] [Android] success 
+[2026-01-04 00:39:43] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:40:37] [device_connect] [Android] success 
+[2026-01-04 00:40:38] [device_connect] [Android] success 
+[2026-01-04 00:40:39] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:40:50] [device_connect] [Android] success 
+[2026-01-04 00:40:50] [device_connect] [Android] success 
+[2026-01-04 00:40:51] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:41:48] [device_connect] [Android] success 
+[2026-01-04 00:41:48] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:41:48] [device_connect] [Android] success 
+[2026-01-04 00:41:48] [device_connect] [Android] success 
+[2026-01-04 00:41:53] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:41:56] [device_connect] [Android] success 
+[2026-01-04 00:42:01] [verify_code] [MOBILE-1767487318118-n877ry7f1] success 
+[2026-01-04 00:42:01] [device_connect] [Android] success 
+[2026-01-04 00:42:45] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:43:27] [device_connect] [Android] success 
+[2026-01-04 00:44:29] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:45:01] [device_connect] [Android] success 
+[2026-01-04 00:45:21] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:45:37] [device_connect] [Android] success 
+[2026-01-04 00:45:49] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:46:03] [device_connect] [Android] success 
+[2026-01-04 00:47:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:48:12] [device_connect] [Android] success 
+[2026-01-04 00:51:23] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 00:51:47] [device_connect] [Android] success 
+[2026-01-04 00:52:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:00:16] [verify_code] [MOBILE-1767488411842-wf1vs7vos] success 
+[2026-01-04 01:00:16] [device_connect] [Android] success 
+[2026-01-04 01:00:17] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:03:35] [device_connect] [Android] success 
+[2026-01-04 01:03:36] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:05:37] [device_connect] [Android] success 
+[2026-01-04 01:05:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:06:48] [device_connect] [Android] success 
+[2026-01-04 01:06:48] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:09:03] [device_connect] [Android] success 
+[2026-01-04 01:10:03] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:10:18] [device_connect] [Android] success 
+[2026-01-04 01:12:04] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:13:49] [device_connect] [Android] success 
+[2026-01-04 01:13:51] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:20:06] [verify_code] [MOBILE-1767489603223-2bnjhgcbb] success 
+[2026-01-04 01:20:07] [device_connect] [Android] success 
+[2026-01-04 01:20:09] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:20:32] [device_connect] [Android] success 
+[2026-01-04 01:20:34] [device_connect] [Android] success 
+[2026-01-04 01:20:35] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:20:38] [device_connect] [Android] success 
+[2026-01-04 01:20:39] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 01:24:55] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 01:25:07] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 01:25:25] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 01:25:37] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 02:36:05] [verify_code] [MOBILE-1767494155984-j3tmkgxe4] success 
+[2026-01-04 02:36:05] [device_connect] [iPhone] success 
+[2026-01-04 02:36:06] [device_disconnect] [iPhone] success {"reason":"connection_closed"}
+[2026-01-04 05:19:41] [verify_code] [MOBILE-1767503978811-ed2b5o1vg] success 
+[2026-01-04 05:19:41] [device_connect] [Android] success 
+[2026-01-04 05:20:56] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:20:59] [device_connect] [Android] success 
+[2026-01-04 05:21:00] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:21:30] [device_connect] [Android] success 
+[2026-01-04 05:21:41] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:21:45] [device_connect] [Android] success 
+[2026-01-04 05:21:53] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:21:54] [device_connect] [Android] success 
+[2026-01-04 05:23:23] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:25:37] [device_connect] [Android] success 
+[2026-01-04 05:25:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:26:32] [device_connect] [Android] success 
+[2026-01-04 05:26:44] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:30:04] [verify_code] [MOBILE-1767504602365-twhprgxqm] success 
+[2026-01-04 05:30:05] [device_connect] [Android] success 
+[2026-01-04 05:30:42] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:33:34] [device_connect] [Android] success 
+[2026-01-04 05:33:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:33:48] [device_connect] [Android] success 
+[2026-01-04 05:34:28] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:34:59] [device_connect] [Android] success 
+[2026-01-04 05:35:05] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:35:09] [device_connect] [Android] success 
+[2026-01-04 05:36:12] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:37:04] [device_connect] [Android] success 
+[2026-01-04 05:37:08] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:38:28] [device_connect] [Android] success 
+[2026-01-04 05:40:32] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:40:34] [device_connect] [Android] success 
+[2026-01-04 05:40:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:40:38] [device_connect] [Android] success 
+[2026-01-04 05:41:04] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:43:58] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:03] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:04] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:05] [device_connect] [Android] success 
+[2026-01-04 05:44:08] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:44:19] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:24] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:28] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:44:36] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:46:03] [device_connect] [Android] success 
+[2026-01-04 05:46:04] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:46:17] [device_connect] [Android] success 
+[2026-01-04 05:46:18] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:47:37] [device_connect] [Android] success 
+[2026-01-04 05:47:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:49:53] [device_connect] [Android] success 
+[2026-01-04 05:49:57] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:50:37] [device_connect] [Android] success 
+[2026-01-04 05:50:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:51:09] [device_connect] [Android] success 
+[2026-01-04 05:51:09] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:52:44] [device_connect] [Android] success 
+[2026-01-04 05:52:44] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:52:47] [device_connect] [Android] success 
+[2026-01-04 05:52:47] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:52:47] [verify_code] [MOBILE-1767505964955-9df5z7v2v] success 
+[2026-01-04 05:52:47] [device_connect] [Android] success 
+[2026-01-04 05:52:51] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:53:06] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:53:23] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:53:30] [device_connect] [Android] success 
+[2026-01-04 05:55:28] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:57:02] [device_connect] [Android] success 
+[2026-01-04 05:57:16] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 05:57:26] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:57:28] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":true}
+[2026-01-04 05:57:35] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 05:58:11] [device_connect] [Android] success 
+[2026-01-04 06:00:09] [device_connect] [Android] success 
+[2026-01-04 06:00:21] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 06:00:36] [device_connect] [Android] success 
+[2026-01-04 06:00:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 06:01:37] [device_connect] [Android] success 
+[2026-01-04 06:02:06] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:02:20] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:02:46] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 06:02:55] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:24:28] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:24:34] [toggle_enabled] [127.0.0.1] success {"enabled":true}
+[2026-01-04 06:24:41] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:27:55] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:28:49] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:29:04] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:32:29] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:32:35] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:33:16] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:41:56] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:42:02] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 06:42:12] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:06:27] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:07:34] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:14:29] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:15:08] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:15:09] [toggle_enabled] [127.0.0.1] failed {"reason":"invalid_admin_password","enabled":false}
+[2026-01-04 07:20:36] [toggle_enabled] [127.0.0.1] success {"enabled":false}
+[2026-01-04 07:21:09] [toggle_enabled] [127.0.0.1] success {"enabled":true}
+[2026-01-04 07:21:31] [verify_code] [MOBILE-1767511288156-2divhnwst] success 
+[2026-01-04 07:21:31] [device_connect] [Android] success 
+[2026-01-04 07:21:33] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:25:36] [device_connect] [Android] success 
+[2026-01-04 07:25:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:27:45] [device_connect] [Android] success 
+[2026-01-04 07:27:46] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:29:37] [device_connect] [Android] success 
+[2026-01-04 07:29:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:31:22] [device_connect] [Android] success 
+[2026-01-04 07:31:26] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:32:47] [device_connect] [Android] success 
+[2026-01-04 07:32:50] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:34:48] [device_connect] [Android] success 
+[2026-01-04 07:34:50] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:35:37] [device_connect] [Android] success 
+[2026-01-04 07:35:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:36:38] [device_connect] [Android] success 
+[2026-01-04 07:36:39] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:36:44] [device_connect] [Android] success 
+[2026-01-04 07:36:45] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:38:17] [device_connect] [Android] success 
+[2026-01-04 07:38:17] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:38:18] [device_connect] [Android] success 
+[2026-01-04 07:38:18] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:38:32] [device_connect] [Android] success 
+[2026-01-04 07:38:34] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:38:44] [device_connect] [Android] success 
+[2026-01-04 07:38:45] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:39:58] [device_connect] [Android] success 
+[2026-01-04 07:40:00] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:40:09] [verify_code] [MOBILE-1767512406945-gymtccyxm] success 
+[2026-01-04 07:40:09] [device_connect] [Android] success 
+[2026-01-04 07:40:10] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:43:31] [device_connect] [Android] success 
+[2026-01-04 07:43:34] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:43:36] [device_connect] [Android] success 
+[2026-01-04 07:43:38] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:44:04] [device_connect] [Android] success 
+[2026-01-04 07:44:04] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:44:04] [device_connect] [Android] success 
+[2026-01-04 07:44:06] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:45:06] [device_connect] [Android] success 
+[2026-01-04 07:45:06] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:45:10] [device_connect] [Android] success 
+[2026-01-04 07:45:10] [verify_code] [MOBILE-1767512707408-8j7lm471v] success 
+[2026-01-04 07:45:10] [device_connect] [Android] success 
+[2026-01-04 07:45:49] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:50:37] [device_connect] [Android] success 
+[2026-01-04 07:50:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:52:47] [device_connect] [Android] success 
+[2026-01-04 07:53:22] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:54:11] [device_connect] [Android] success 
+[2026-01-04 07:54:46] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:55:37] [device_connect] [Android] success 
+[2026-01-04 07:55:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:56:03] [device_connect] [Android] success 
+[2026-01-04 07:56:24] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:56:27] [device_connect] [Android] success 
+[2026-01-04 07:56:28] [verify_code] [MOBILE-1767513385338-urhhws9qe] success 
+[2026-01-04 07:56:28] [device_connect] [Android] success 
+[2026-01-04 07:56:43] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:56:50] [device_connect] [Android] success 
+[2026-01-04 07:57:10] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:59:21] [device_connect] [Android] success 
+[2026-01-04 07:59:21] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 07:59:29] [verify_code] [MOBILE-1767513566799-f6xf4cy3n] success 
+[2026-01-04 07:59:29] [device_connect] [Android] success 
+[2026-01-04 07:59:32] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:00:38] [device_connect] [Android] success 
+[2026-01-04 08:00:41] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:00:42] [device_connect] [Android] success 
+[2026-01-04 08:00:45] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:00:50] [device_connect] [Android] success 
+[2026-01-04 08:00:53] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:01:58] [verify_code] [MOBILE-1767513714897-0nz81xhdc] success 
+[2026-01-04 08:01:58] [device_connect] [Android] success 
+[2026-01-04 08:03:23] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:05:37] [device_connect] [Android] success 
+[2026-01-04 08:05:49] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:06:34] [device_connect] [Android] success 
+[2026-01-04 08:07:32] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:08:07] [device_connect] [Android] success 
+[2026-01-04 08:08:12] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:08:15] [device_connect] [Android] success 
+[2026-01-04 08:08:16] [verify_code] [MOBILE-1767514092490-utzy182ka] success 
+[2026-01-04 08:08:16] [device_connect] [Android] success 
+[2026-01-04 08:08:41] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:08:52] [verify_code] [MOBILE-1767514130321-92xb26u3c] success 
+[2026-01-04 08:08:52] [device_connect] [Android] success 
+[2026-01-04 08:09:33] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:10:06] [device_connect] [Android] success 
+[2026-01-04 08:10:07] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:10:37] [device_connect] [Android] success 
+[2026-01-04 08:10:54] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:12:42] [device_connect] [Android] success 
+[2026-01-04 08:12:43] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:12:49] [verify_code] [MOBILE-1767514367132-tdn9099ia] success 
+[2026-01-04 08:12:49] [device_connect] [Android] success 
+[2026-01-04 08:13:19] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:13:36] [device_connect] [Android] success 
+[2026-01-04 08:14:12] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:15:36] [device_connect] [Android] success 
+[2026-01-04 08:15:40] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[2026-01-04 08:15:55] [device_connect] [Android] success 
+[2026-01-04 08:15:59] [device_disconnect] [Android] success {"reason":"connection_closed"}
+"2026-01-04 08:43:56","MOBILE-1767516226092-nfx1690lt","","验证码验证","success",""
+"2026-01-04 08:43:56","Android","10.8.4.149","设备连接","success",""
+"2026-01-04 08:44:00","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 08:44:06","Android (::ffff:10.8.4.149)","","查看中奖名单","success",""action": """
+"2026-01-04 08:44:15","Android (::ffff:10.8.4.149)","","查看中奖名单","success",""action": """
+"2026-01-04 08:44:19","Android (10.8.4.149)","","开始抽奖","success",""action": """
+"2026-01-04 08:44:25","Android (10.8.4.149)","","停止抽奖","success",""action": """
+"2026-01-04 08:44:28","Android (10.8.4.149)","","继续抽奖","success",""action": """
+"2026-01-04 08:44:41","Android (::ffff:10.8.4.149)","","查看中奖名单","success",""action": """
+"2026-01-04 11:41:43","MOBILE-1767526900703-swvuye0no","","验证码验证","success",""
+"2026-01-04 11:41:43","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:41:45","Android (192.168.1.2)","","停止抽奖","success",""action": """
+"2026-01-04 11:41:46","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:41:56","Android (192.168.1.2)","","继续抽奖","success",""action": """
+"2026-01-04 11:42:01","Android (::ffff:192.168.1.2)","","查看中奖名单","success",""action": """
+"2026-01-04 11:42:15","Android (192.168.1.2)","","开始抽奖","success",""action": """
+"2026-01-04 11:42:16","Android (192.168.1.2)","","停止抽奖","success",""action": """
+"2026-01-04 11:42:22","Android (192.168.1.2)","","停止抽奖","success",""action": """
+"2026-01-04 11:42:26","Android (192.168.1.2)","","继续抽奖","success",""action": """
+"2026-01-04 11:42:29","Android (192.168.1.2)","","继续抽奖","success",""action": """
+"2026-01-04 11:42:33","Android (192.168.1.2)","","开始抽奖","success",""action": """
+"2026-01-04 11:42:36","Android (192.168.1.2)","","停止抽奖","success",""action": """
+"2026-01-04 11:42:40","Android (192.168.1.2)","","继续抽奖","success",""action": """
+"2026-01-04 11:42:44","Android (::ffff:192.168.1.2)","","查看中奖名单","success",""action": """
+"2026-01-04 11:44:51","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:44:54","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:44:57","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:44:57","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:45:03","MOBILE-1767527094881-5n447k1s1","","验证码验证","success",""
+"2026-01-04 11:45:03","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:45:04","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:45:42","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:45:44","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:46:39","MOBILE-1767527191855-al4vpsmud","","验证码验证","success",""
+"2026-01-04 11:46:39","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 11:46:39","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:48:46","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:48:47","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:49:12","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:49:14","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:49:36","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:49:39","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:50:05","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:50:06","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:50:45","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:50:47","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:52:43","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:52:46","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:54:15","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:54:15","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:57:37","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:57:37","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:57:45","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 11:57:48","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 11:59:46","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:00:35","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:05:15","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:05:18","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:09:38","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:09:40","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:10:20","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:11:09","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:12:13","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:13:02","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:13:38","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:14:27","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:17:09","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:17:37","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:17:46","Mobile Device","192.168.1.4","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:18:08","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:18:13","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:20:40","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:21:29","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:24:25","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:25:15","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:25:36","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:26:25","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:27:57","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:28:16","Android","192.168.1.2","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:33:04","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:33:06","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:33:09","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:33:13","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:33:16","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:33:18","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:33:21","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:33:25","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:33:28","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:33:37","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:33:39","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:34:59","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:34:59","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:35:30","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:35:30","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:35:39","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:35:39","MOBILE-1767530136355-ff9cc8wot","","验证码验证","success",""
+"2026-01-04 12:35:39","Android","192.168.1.2","设备连接","success",""
+"2026-01-04 12:35:41","Android","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:39:04","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:39:09","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:40:10","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:40:16","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:40:52","Mobile Device","192.168.1.4","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:40:53","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:43:01","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:43:31","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:43:45","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:43:49","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:43:54","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:43:56","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:44:00","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:44:06","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:44:08","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:44:12","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:47:26","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:47:32","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:47:37","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:54:42","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:54:45","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:54:45","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:54:46","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:54:49","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:54:49","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:54:52","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:55:01","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:55:02","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:55:04","Mobile Device","192.168.1.4","设备连接","success",""
+"2026-01-04 12:55:06","Mobile Device","127.0.0.1","设备断开","success",""reason": "connection_closed""
+"2026-01-04 12:56:52","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:56:55","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:56:58","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:57:01","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:57:31","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:57:46","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:57:50","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:58:51","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:58:52","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:58:56","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:00","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:59:03","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:59:05","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:59:08","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:10","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:12","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:15","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:59:19","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:59:21","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:23","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:59:26","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:59:28","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 12:59:31","Mobile Device (::ffff:192.168.1.4)","","查看中奖名单","success",""action": """
+"2026-01-04 12:59:41","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 12:59:43","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 12:59:46","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """
+"2026-01-04 13:00:53","127.0.0.1","","切换功能开关","success",""enabled": false"
+"2026-01-04 13:01:18","127.0.0.1","","切换功能开关","success",""enabled": true"
+"2026-01-04 13:01:55","Mobile Device (192.168.1.4)","","开始抽奖","success",""action": """
+"2026-01-04 13:01:57","Mobile Device (192.168.1.4)","","停止抽奖","success",""action": """
+"2026-01-04 13:01:59","Mobile Device (192.168.1.4)","","继续抽奖","success",""action": """

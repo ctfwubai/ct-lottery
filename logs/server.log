@@ -1,0 +1,18 @@
+[MobileControl] Admin password loaded: *********
+✅ Server started: http://localhost:3001
+✅ Server is listening on all interfaces (0.0.0.0:3001)
+📁 Font directory: d:\ftp\choujiang\log-lottery-main\public\fonts
+📝 Template directory: d:\ftp\choujiang\log-lottery-main\public\templates
+📱 Mobile control: enabled
+[WebSocket] New connection from: 10.8.4.91
+[WebSocket] Received from 10.8.4.91 : { type: 'mobile_connect', device: 'Android' }
+[MobileControl] [2026-01-04 06:00:09] [device_connect] [Android] success
+[WebSocket] Mobile connected: Android
+[WebSocket] Connection closed: 10.8.4.91
+[MobileControl] [2026-01-04 06:00:21] [device_disconnect] [Android] success {"reason":"connection_closed"}
+[WebSocket] New connection from: 10.8.4.91
+[WebSocket] Received from 10.8.4.91 : { type: 'mobile_connect', device: 'Android' }
+[MobileControl] [2026-01-04 06:00:36] [device_connect] [Android] success
+[WebSocket] Mobile connected: Android
+[WebSocket] Connection closed: 10.8.4.91
+[MobileControl] [2026-01-04 06:00:37] [device_disconnect] [Android] success {"reason":"connection_closed"}
