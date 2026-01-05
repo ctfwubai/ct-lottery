@@ -110,6 +110,8 @@ npm install --legacy-peer-deps
 npm run build
 ```
 
+<img width="625" height="137" alt="image" src="https://github.com/user-attachments/assets/a0df23f7-e6c4-46f1-89b5-03d570d965f1" />
+
 
 提示：权限问题！vue-tsc 没有执行权限。
 
@@ -133,7 +135,9 @@ npm install --legacy-peer-deps
 npx vite build
 ```
 
-![image-20260105081743123](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260105081743123.png)
+<img width="712" height="748" alt="image" src="https://github.com/user-attachments/assets/c3709b51-98d5-4f78-aecd-4cf3325c7bcd" />
+
+
 
 
 
@@ -156,8 +160,8 @@ sudo chmod -R 755 /var/www/ct-lottery
 # 验证文件
 ls -la /var/www/ct-lottery/
 ```
+<img width="756" height="518" alt="image" src="https://github.com/user-attachments/assets/24a68a3e-d3cf-42d9-926a-a0deefb2f4bc" />
 
-![image-20260105081958050](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260105081958050.png)
 
 -------------
 
@@ -194,8 +198,8 @@ ExecStart=/root/.nvm/versions/node/v20.19.0/bin/node /opt/ct-lottery-main/server
 ```
 
 
+<img width="1684" height="465" alt="image" src="https://github.com/user-attachments/assets/a1748a3e-f78b-481e-8f35-44e9edc5935b" />
 
-![image-20260105083536445](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260105083536445.png)
 
 
 
@@ -249,8 +253,8 @@ sudo systemctl stop lottery-backend
 sudo systemctl restart lottery-backend
 
 ```
+<img width="722" height="310" alt="image" src="https://github.com/user-attachments/assets/4c36d805-5df7-4b83-b334-89d72eaa93e8" />
 
-![image-20260105084149679](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260105084149679.png)
 
 ##### 验证服务
 
@@ -263,7 +267,8 @@ curl http://localhost:3001/api/fonts
 
 ```
 
-![image-20260105084218307](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260105084218307.png)
+<img width="730" height="61" alt="image" src="https://github.com/user-attachments/assets/c2e8ab03-138b-4b09-85f1-eabd55042730" />
+
 
 ----
 
