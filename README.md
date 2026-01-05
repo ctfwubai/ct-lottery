@@ -592,21 +592,19 @@ sudo kill -9 PID
 
 ```
 # 重新设置权限
-sudo chown -R www-data:www-data /var/www/lottery
-sudo chmod -R 755 /var/www/lottery
+sudo chown -R www-data:www-data /var/www/ct-lottery
+sudo chmod -R 755 /var/www/ct-lottery
 ```
 
 #### 3. 查看日志
 
 ```
 # Nginx 访问日志
-sudo tail -f /var/log/nginx/lottery-access.log
+sudo tail -f /var/log/nginx/ct-lottery-access.log
 
 # Nginx 错误日志
-sudo tail -f /var/log/nginx/lottery-error.log
+sudo tail -f /var/log/nginx/ct-lottery-error.log
 
-# PM2 日志
-pm2 logs lottery-backend
 
 # 系统日志
 sudo journalctl -u nginx -f
@@ -628,7 +626,7 @@ npm run build
 
 ```
 # 1. 进入项目目录
-cd /home/lottery
+cd /opt/ct-lottery-main
 
 # 2. 拉取最新代码
 git pull
@@ -640,12 +638,12 @@ npm install --legacy-peer-deps
 npm run build
 
 # 5. 复制新文件
-sudo cp -r dist/* /var/www/lottery/
-sudo cp -r public/* /var/www/lottery/
+sudo cp -r dist/* /var/www/ct-lottery/
+sudo cp -r public/* /var/www/ct-lottery/
 
 # 6. 重新设置权限
-sudo chown -R www-data:www-data /var/www/lottery
-sudo chmod -R 755 /var/www/lottery
+sudo chown -R www-data:www-data /var/www/ct-lottery
+sudo chmod -R 755 /var/www/ct-lottery
 
 # 7. 重启后端
 pm2 restart lottery-backend
@@ -663,12 +661,12 @@ sudo systemctl reload nginx
 
 | 文件/目录      | 位置                                 |
 | -------------- | ------------------------------------ |
-| 项目源码       | `/home/lottery`                      |
-| 部署文件       | `/var/www/lottery`                   |
-| Nginx 配置     | `/etc/nginx/sites-available/lottery` |
-| Nginx 访问日志 | `/var/log/nginx/lottery-access.log`  |
-| Nginx 错误日志 | `/var/log/nginx/lottery-error.log`   |
-| PM2 配置       | `/home/lottery/ecosystem.config.js`  |
+| 项目源码       | `/opt/ct-lottery-main`                      |
+| 部署文件       | `/var/www/ct-lottery`                   |
+| Nginx 配置     | `/etc/nginx/sites-available/ct-lottery` |
+| Nginx 访问日志 | `/var/log/nginx/ct-lottery-access.log`  |
+| Nginx 错误日志 | `/var/log/nginx/ct-lottery-error.log`   |
+
 
 ## 🎯 快速参考
 
