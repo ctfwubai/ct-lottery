@@ -110,7 +110,7 @@ npm install --legacy-peer-deps
 npm run build
 ```
 
-<img width="625" height="137" alt="image" src="https://github.com/user-attachments/assets/a0df23f7-e6c4-46f1-89b5-03d570d965f1" />
+<img width="625" height="137" alt="image" src="https://github.com/user-attachments/assets/e8cf9159-a4ca-4fd3-80ce-5d5e91b6d501" />
 
 
 提示：权限问题！vue-tsc 没有执行权限。
@@ -128,15 +128,19 @@ npm run build
 
 ```
 
-或者
+提示这个：
+
+<img width="717" height="230" alt="image" src="https://github.com/user-attachments/assets/d12b0f1d-836c-4b44-8d11-9fc3777aae1c" />
+
+
+那就用这个命令：
 
 ```
 npm install --legacy-peer-deps
 npx vite build
 ```
 
-<img width="712" height="748" alt="image" src="https://github.com/user-attachments/assets/c3709b51-98d5-4f78-aecd-4cf3325c7bcd" />
-
+<img width="712" height="748" alt="image" src="https://github.com/user-attachments/assets/e7bad165-fc8f-4aec-9382-f931de33f086" />
 
 
 
@@ -160,7 +164,7 @@ sudo chmod -R 755 /var/www/ct-lottery
 # 验证文件
 ls -la /var/www/ct-lottery/
 ```
-<img width="756" height="518" alt="image" src="https://github.com/user-attachments/assets/24a68a3e-d3cf-42d9-926a-a0deefb2f4bc" />
+<img width="756" height="518" alt="image" src="https://github.com/user-attachments/assets/7a3b48c6-0fc5-4a08-bd02-746129e8e32d" />
 
 
 -------------
@@ -198,7 +202,7 @@ ExecStart=/root/.nvm/versions/node/v20.19.0/bin/node /opt/ct-lottery-main/server
 ```
 
 
-<img width="1684" height="465" alt="image" src="https://github.com/user-attachments/assets/a1748a3e-f78b-481e-8f35-44e9edc5935b" />
+<img width="1684" height="465" alt="image" src="https://github.com/user-attachments/assets/52bb75c9-95bf-4161-89b1-1098e8b32785" />
 
 
 
@@ -253,7 +257,7 @@ sudo systemctl stop lottery-backend
 sudo systemctl restart lottery-backend
 
 ```
-<img width="722" height="310" alt="image" src="https://github.com/user-attachments/assets/4c36d805-5df7-4b83-b334-89d72eaa93e8" />
+<img width="722" height="310" alt="image" src="https://github.com/user-attachments/assets/e5364f82-d957-47f9-9499-8323a9e67dd3" />
 
 
 ##### 验证服务
@@ -267,7 +271,7 @@ curl http://localhost:3001/api/fonts
 
 ```
 
-<img width="730" height="61" alt="image" src="https://github.com/user-attachments/assets/c2e8ab03-138b-4b09-85f1-eabd55042730" />
+<img width="730" height="61" alt="image" src="https://github.com/user-attachments/assets/d4b825a5-bef3-475b-90ec-a7a07b2bb1fd" />
 
 
 ----
@@ -429,21 +433,19 @@ sudo kill -9 PID
 
 ```
 # 重新设置权限
-sudo chown -R www-data:www-data /var/www/lottery
-sudo chmod -R 755 /var/www/lottery
+sudo chown -R www-data:www-data /var/www/ct-lottery
+sudo chmod -R 755 /var/www/ct-lottery
 ```
 
 #### 3. 查看日志
 
 ```
 # Nginx 访问日志
-sudo tail -f /var/log/nginx/lottery-access.log
+sudo tail -f /var/log/nginx/ct-lottery-access.log
 
 # Nginx 错误日志
-sudo tail -f /var/log/nginx/lottery-error.log
+sudo tail -f /var/log/nginx/ct-lottery-error.log
 
-# PM2 日志
-pm2 logs lottery-backend
 
 # 系统日志
 sudo journalctl -u nginx -f
@@ -465,7 +467,7 @@ npm run build
 
 ```
 # 1. 进入项目目录
-cd /home/lottery
+cd /opt/ct-lottery-main
 
 # 2. 拉取最新代码
 git pull
@@ -477,12 +479,12 @@ npm install --legacy-peer-deps
 npm run build
 
 # 5. 复制新文件
-sudo cp -r dist/* /var/www/lottery/
-sudo cp -r public/* /var/www/lottery/
+sudo cp -r dist/* /var/www/ct-lottery/
+sudo cp -r public/* /var/www/ct-lottery/
 
 # 6. 重新设置权限
-sudo chown -R www-data:www-data /var/www/lottery
-sudo chmod -R 755 /var/www/lottery
+sudo chown -R www-data:www-data /var/www/ct-lottery
+sudo chmod -R 755 /var/www/ct-lottery
 
 # 7. 重启后端
 pm2 restart lottery-backend
@@ -500,12 +502,12 @@ sudo systemctl reload nginx
 
 | 文件/目录      | 位置                                 |
 | -------------- | ------------------------------------ |
-| 项目源码       | `/home/lottery`                      |
-| 部署文件       | `/var/www/lottery`                   |
-| Nginx 配置     | `/etc/nginx/sites-available/lottery` |
-| Nginx 访问日志 | `/var/log/nginx/lottery-access.log`  |
-| Nginx 错误日志 | `/var/log/nginx/lottery-error.log`   |
-| PM2 配置       | `/home/lottery/ecosystem.config.js`  |
+| 项目源码       | `/opt/ct-lottery-main`                      |
+| 部署文件       | `/var/www/ct-lottery`                   |
+| Nginx 配置     | `/etc/nginx/sites-available/ct-lottery` |
+| Nginx 访问日志 | `/var/log/nginx/ct-lottery-access.log`  |
+| Nginx 错误日志 | `/var/log/nginx/ct-lottery-error.log`   |
+
 
 ## 🎯 快速参考
 
@@ -543,3 +545,6 @@ sudo ufw status                 # 查看状态
 3. 点击齿轮图标 ⚙️ 进入高级设置
 4. 输入高级设置密码（默认：`admin888`）
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ctfwubai/ct-lottery&type=date&legend=top-left)](https://www.star-history.com/#ctfwubai/ct-lottery&type=date&legend=top-left)
