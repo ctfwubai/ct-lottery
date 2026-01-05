@@ -1,865 +1,700 @@
-<div align="center">
-    <a href="https://log1997.github.io/log-lottery/">
-        <img src="./static/images/lottery.png" width="120" height="120" alt="Lottery Logo" />
-    </a>
+### 1.打开大屏主页
 
-# 🎰 log-lottery 3D抽奖系统
+- ##### 登录账号：admin  密码：admin123
 
-[![MIT](https://img.shields.io/github/package-json/v/log1997/log-lottery)](https://github.com/LOG1997/log-lottery)
-[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/LOG1997/log-lottery)
-[![github](https://img.shields.io/badge/Author-log1997-blue.svg)](https://github.com/log1997)
-[![vue3](https://img.shields.io/badge/VUE-3-green.svg)](https://github.com/log1997)
-[![build](https://img.shields.io/github/actions/workflow/status/log1997/log-lottery/node.js.yml)](https://github.com/LOG1997)
-[![threejs](https://img.shields.io/badge/Three.js-latest-orange.svg)](https://threejs.org/)
+- ##### 右侧按钮介绍
 
-</div>
+  - 点击锁定
 
----
+  >1.锁定大屏手机是无法操作抽奖的。解锁后正常
 
-## 📖 简介
+  - 重置按钮
 
-**log-lottery** 是一个功能强大、可高度定制化的企业级3D抽奖应用系统。采用炫酷的3D球体动画效果，专为年会、庆典、团队活动等场景设计。系统支持灵活的奖品配置、人员管理、界面定制及背景音乐设置，提供沉浸式的抽奖体验。
+  > 1.初始化所有数据 （需要输入管理密码:admin888）
 
-### ✨ 核心特性
+<img width="1891" height="959" alt="image" src="https://github.com/user-attachments/assets/281ae84f-f0f3-4766-aaff-dbc90b375b2d" />
 
-- 🌟 **炫酷3D视觉**: 采用 Three.js 打造震撼的3D球体动画效果
-- 🎯 **灵活配置**: 支持奖品、人员、界面、图片音乐的全方位自定义
-- 💾 **本地存储**: 基于 IndexedDB 的本地持久化数据存储
-- 🎨 **主题定制**: 丰富的界面主题和颜色配置选项
-- 🌍 **多语言**: 支持国际化多语言切换
-- 📊 **数据管理**: Excel表格导入导出,方便批量管理
-- 🎵 **氛围营造**: 支持背景音乐播放,营造活动氛围
-- 🔐 **安全控制**: 密码保护的高级设置功能
-- 🎪 **特殊模式**: 支持指定人员抽奖功能
-- 📱 **响应式设计**: 完美适配各种屏幕尺寸
 
-> 💡 **提示**: 如果进入网站遇到图片无法显示或有报错,请先到【全局配置】-【界面配置】菜单中点击【重置所有数据】按钮清除数据后进行更新。
+  - 恢复飘舞按钮
 
----
+  > 1.打散人员名单卡片排序
+<img width="1909" height="1045" alt="image" src="https://github.com/user-attachments/assets/922f55fa-067c-43a7-894c-11ec85390d9e" />
 
-## 🆕 更新日志
 
-### v2.0.0 (2024-12-29)
+- 查看中奖人员名单按钮
 
-#### 🎉 新增功能
-- ✨ **鼠标悬停特效**: 鼠标悬停卡片时自动放大1.3倍,增强交互体验
-- 🔐 **取消抽奖确认**: 点击取消按钮时弹出确认对话框,防止误操作导致数据丢失
-- 📋 **查看中奖名单**: 新增中奖名单查看功能,支持按奖项筛选和工号/姓名搜索
-- 🎨 **恢复飘舞效果**: 新增恢复飘舞效果按钮,可恢复初始飘舞状态而不清除数据
-- 💎 **指定抽奖模式**: 支持为每个奖项配置指定人员,高级功能需求
-- 🎮 **自定义抽奖人数**: 全局设置中可自定义每次抽取的人数
-- 🔄 **智能中奖剔除**: 指定模式中奖后自动从其他奖项指定名单中移除
-- 📊 **中奖详情显示**: 查看中奖名单时显示完整的工号、姓名、部门、身份、奖项、中奖时间
+> 1.可查看和筛选中奖的人员名单，展示作用。
+>
+> 2.可选指定人员，从中奖名单中跳过。这是避免中奖的人员不在现场，重新把机会留给现场人员。
 
-#### 🐛 修复问题
-- 🔧 修复了恢复飘舞效果按钮位置问题,现在固定在右上角避免与重置按钮重叠
-- 🔧 修复了鼠标悬停动画的流畅度问题
-- 🔧 优化了抽奖过程中的卡顿现象
-- 🔧 修复了指定人员模式的逻辑错误
+![image-20260104195758746](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260104195758746.png)
 
-#### 🚀 性能优化
-- ⚡ 优化了3D渲染性能,提升抽奖流畅度
-- ⚡ 优化了动画帧率,减少CPU占用
-- ⚡ 优化了数据更新频率,平衡性能与体验
+<img width="1797" height="1009" alt="image" src="https://github.com/user-attachments/assets/1377f5d0-f305-40d3-914c-3945c870a1ab" />
 
-### v1.0.0
+- 退出按钮
 
-- 🎁 基础抽奖功能实现
-- 🎨 3D球体动画效果
-- 👥 人员和奖项管理
-- 🎵 背景音乐支持
-- 🌐 国际化多语言
-- 📁 Excel导入导出
+> 1.退出当前登录页面
+
+<img width="1898" height="1069" alt="image" src="https://github.com/user-attachments/assets/bcb2a623-f0c0-4345-8752-e4265d2f1415" />
+
+
 
 ---
 
-## 📦 功能说明
+### 以下我只介绍我增加的功能
 
-### 🎯 抽奖功能
+##### 1.人员配置-人员列表
 
-| 功能 | 说明 |
-|------|------|
-| **3D球体抽奖** | 采用炫酷的3D球体旋转动画,视觉冲击力强 |
-| **多种抽奖模式** | 支持普通模式和指定人员模式 |
-| **智能中奖剔除** | 中奖人员自动从后续抽奖中剔除,避免重复中奖 |
-| **灵活抽奖人数** | 可设置每次抽取的人数,支持单次抽取多人和分批次抽取 |
-| **键盘快捷键** | 空格键控制抽奖流程,ESC键取消抽奖 |
-| **庆祝动画** | 中奖后自动播放纸屑庆祝动画 |
-| **金粉特效** | 恢复飘舞效果时播放金色纸屑特效 |
+> 1.增加导出
+>
+> 2.增加手工添加人员信息
 
-### 👥 人员管理
+<img width="1902" height="1078" alt="image" src="https://github.com/user-attachments/assets/6c472253-25d5-421f-8502-6386d796c550" />
 
-| 功能 | 说明 |
-|------|------|
-| **Excel批量导入** | 支持Excel表格批量导入人员信息 |
-| **详细信息管理** | 支持工号、姓名、部门、身份、头像等信息管理 |
-| **中奖状态标记** | 自动标记中奖人员状态 |
-| **数据导出** | 支持中奖人员名单导出为Excel |
-| **头像支持** | 可为人员配置头像,支持上传自定义头像 |
+<img width="1712" height="991" alt="image" src="https://github.com/user-attachments/assets/2aeb68df-a895-4c17-9158-09baa1a32af2" />
 
-### 🎁 奖品配置
 
-| 功能 | 说明 |
-|------|------|
-| **多级奖项** | 支持一等奖、二等奖、三等奖等多级奖项配置 |
-| **灵活数量设置** | 每个奖项可独立设置中奖人数 |
-| **奖品图片** | 支持为每个奖项上传奖品图片 |
-| **奖项排序** | 支持奖项排序,自定义抽奖顺序 |
-| **指定模式** | 支持为奖项开启指定人员模式 |
-| **特殊用户配置** | 为指定奖项配置特殊中奖人员 |
-| **单次抽取配置** | 支持为奖项设置单次抽取人数,实现分批次抽奖 |
 
-### 🎨 界面定制
 
-| 功能 | 说明 |
-|------|------|
-| **标题自定义** | 支持自定义活动标题 |
-| **列数配置** | 支持调整卡片显示的列数(2-10列) |
-| **卡片颜色** | 支持自定义卡片颜色和幸运卡片颜色 |
-| **卡片尺寸** | 支持调整卡片的宽度、高度和字体大小 |
-| **背景图片** | 支持上传自定义背景图片 |
-| **主题切换** | 内置多种主题配色方案 |
-| **图案配置** | 支持首页图案配置 |
-| **头像显示** | 支持开启/关闭人员头像显示 |
+##### 2.人员配置-中奖人员
 
-### 🔐 高级功能
+> 1.增加导出中奖人员名单为excel格式，方便整理，和签字，提交给财务报账。
+>
+> 2.移入未中奖名单，相当如把人员信息重新投入奖池。
 
-| 功能 | 说明 |
-|------|------|
-| **密码保护** | 高级设置页面需要密码验证才能访问(默认密码:admin888) |
-| **指定人员抽奖** | 支持为奖项配置指定中奖人员名单 |
-| **批量添加指定人员** | 支持批量输入工号添加指定人员(格式:U1001,U1002,U1003) |
-| **中奖自动清理** | 指定模式中奖后自动从其他奖项指定名单中移除 |
-| **隐藏入口** | 高级设置入口隐藏在配置页面底部齿轮图标 |
+<img width="1904" height="960" alt="image" src="https://github.com/user-attachments/assets/6a676997-48d3-439a-8c78-4dd52e3bf4fc" />
 
-### 📋 中奖查看
 
-| 功能 | 说明 |
-|------|------|
-| **中奖名单查看** | 查看所有中奖人员名单 |
-| **奖项筛选** | 按奖项类型筛选中奖人员 |
-| **关键词搜索** | 支持按工号或姓名搜索中奖人员 |
-| **详细信息展示** | 显示工号、姓名、部门、身份、中奖奖项、中奖时间 |
-| **统计信息** | 显示中奖人数统计 |
+##### 1.奖品配置
 
----
+> 1.优化了单词抽取个数。可以自己手动自定义输入。
 
-## 🖼️ 预览
+<img width="1907" height="1012" alt="image" src="https://github.com/user-attachments/assets/c66203a4-8f81-4168-a7c5-8625c9c37779" />
 
-### 🏠 首页
+<img width="1920" height="1047" alt="image" src="https://github.com/user-attachments/assets/ff780d4b-014a-47d6-9707-8f2b3823831b" />
 
-![image_home](./static/images/home.png)
 
-![image_home_prize_list](./static//images/home_prizelist.png)
 
-### 🎲 抽奖流程
+##### 4.全局配置-界面设置
 
-![image_lottery](./static/images/lottery-enter.png)
+> 1.增加了标题字体大小配置
+>
+> 2.增加了标题字体颜色修改
 
-![image_lottery_done](./static/images/lottery-done.png)
 
-### ⚙️ 配置界面
+<img width="1508" height="723" alt="image" src="https://github.com/user-attachments/assets/1e94d83a-5840-4cca-8986-b38ee9e24187" />
 
-**人员配置**
 
-![image_config_person_all](./static/images/config_personall.png)
+##### 5.全局配置-字体管理
 
-**奖项配置**
+> 1.增加了上传字体 和预览配置的选项，主要针对首页主题的，但好像是没什么用，就没有继续去处理这个问题了。后续有时间再看了。
 
-![image_config_prize_list](./static/images/config_prize.png)
+<img width="1899" height="893" alt="image" src="https://github.com/user-attachments/assets/f18467ba-d017-4e89-8350-2aa0b11b2dec" />
 
-**全局配置**
 
-![image_config_view](./static/images/config-view.png)
+##### 6.全局配置-配置模板
 
-**图案配置**
+> 1.增加了配置模板页：主要目的是当你配置了一些参数信息，可以支持导出和保存，下次需要使用的时候可以快速导入和应用。
 
-![image_config_pattern](./static/images/config_pattern.png)
+<img width="1903" height="920" alt="image" src="https://github.com/user-attachments/assets/757cbf87-51b7-44f1-90f6-58105d5d7ec3" />
 
-**图片音乐配置**
 
-![image_config_img](./static/images/image_config.png)
 
-![image_music](./static/images/music_music.png)
 
----
+##### 7.全局配置-手机控制
 
-## 🚀 快速开始
+> 1.启用手机控制开关，关闭后，抽奖首页，鼠标滑过按钮的时候不会显示二维码。开启就会显示。
+>
+> 2.当你的电脑有多快网卡的时候，你希望手机扫码后，直接跳转到指定的IP地址或者域名。这里都可以自定义的。
+>
+> 3.手机扫码跳转到手机控制页面，需要输入密码才能登录，此处就是修改和指定验证码的。默认验证码是：123456
+>
+> **注意：手机网络和应用网络必须要能够互相访问**
+>
+> 4.手机连接状态
+>
+> 5.手机连接后的操作日志。
 
-### 环境要求
+<img width="1891" height="927" alt="image" src="https://github.com/user-attachments/assets/82d0ac64-a668-4574-bcd7-9fd6090da291" />
 
-- **Node.js** >= 16.0.0
-- **pnpm** >= 7.0.0 (推荐) 或 npm/yarn
-- **浏览器**: 最新版 Chrome 或 Edge (推荐)
+<img width="1661" height="583" alt="image" src="https://github.com/user-attachments/assets/1ce02c76-8e8d-4ef0-a414-d7c1c8d661de" />
 
-### 📥 安装依赖
+<img width="1697" height="1033" alt="image" src="https://github.com/user-attachments/assets/8d0799cf-98f4-4929-bb7f-fb48a517754f" />
 
-```bash
-# 使用 pnpm (推荐)
-pnpm install
 
-# 或使用 npm
-npm install
+##### 8..系统设置
 
-# 或使用 yarn
-yarn install
+> 此处就看各位自己去探究了，但绝对是大家想要的
+
+<img width="1893" height="777" alt="image" src="https://github.com/user-attachments/assets/e2075617-17d5-4d6b-bb7f-0e9949642432" />
+
+<img width="1623" height="1032" alt="image" src="https://github.com/user-attachments/assets/2e395b12-942a-4f6e-89f7-49217176e17d" />
+
+
+##### 9..操作说明
+
+> 懒得优化，也懒得修复。
+
+
+
+##### 10.手机端操作。
+
+> 1.当当前奖项抽取完成后，手机的开始抽奖功能会变成灰色，无法操作。
+>
+> 2.查看中奖名单，可以调出大屏上的中奖名单，但有前提条件，必须当前奖项全部抽取完毕可以使用。否则只支持大屏鼠标点击使用
+<img width="464" height="947" alt="image" src="https://github.com/user-attachments/assets/aeb6dfa3-59b1-4aa2-939d-daf261282e70" />
+
+<img width="487" height="957" alt="image" src="https://github.com/user-attachments/assets/1c1ccc9c-a4a4-4994-9fb3-99e6b19ee8c5" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# CTF-lottery 抽奖程序部署(Ubuntu)说明
+
+>windows 系统上测试调试运行 (以下测试环境运行，成功是有条件的，在这里不多解释。)
+>
+>后端：D:\ftp\choujiang\ct-lottery-main>node server.cjs 
+>
+>前端：D:\ftp\choujiang\ct-lottery-main>start.bat 
+
+### 一、准备阶段
+
+#### 1.1 连接到 Ubuntu 服务器
+
+```
+# 使用 SSH 连接
+ssh username@your-server-ip
+# 例如：ssh root@192.168.1.100
 ```
 
-### 🔧 开发环境运行
+#### 1.2 更新系统
 
-```bash
-# 启动开发服务器
-pnpm dev
-
-# 或
-npm run dev
-
-# 或
-yarn dev
+```
+sudo apt update
+sudo apt upgrade -y
 ```
 
-访问 http://localhost:5173 查看应用
+#### 1.3 安装必要工具
 
-### 📦 生产环境构建
-
-```bash
-# 构建生产版本
-pnpm build
-
-# 或
-npm run build
-
-# 或
-yarn build
+```
+sudo apt install -y git curl wget build-essential unzip
 ```
 
-构建完成后,`dist` 目录包含所有生产文件。
+### 二、安装 Node.js 18.x
 
-### 👀 预览生产构建
-
-```bash
-# 预览构建结果
-pnpm preview
-
-# 或
-npm run preview
-
-# 或
-yarn preview
 ```
-
-### 📄 静态文件运行
-
-若想直接以打开 HTML 文件的方式运行,请执行以下命令进行打包。打包完成后在 `dist` 目录中直接打开 `index.html` 即可。
-
-```bash
-pnpm build:file
-or
-npm run build:file
-```
-
----
-
-## 🖥️ 部署指南
-
-### Windows 部署
-
-#### 前置要求
-
-1. 安装 **Node.js** (版本 >= 16.0.0)
-   - 下载地址: https://nodejs.org/
-   - 建议选择 LTS 版本
-
-2. 安装包管理工具 (选择其一)
-   - **pnpm** (推荐): `npm install -g pnpm`
-   - **npm**: 随 Node.js 一起安装
-   - **yarn**: `npm install -g yarn`
-
-#### 部署步骤
-
-**1. 克隆或下载项目**
-
-```bash
-# 如果使用 Git
-git clone https://github.com/LOG1997/log-lottery.git
-cd log-lottery
-
-# 或直接下载 ZIP 包并解压
-```
-
-**2. 安装依赖**
-
-```bash
-# 推荐使用 pnpm
-pnpm install
-
-# 或使用 npm
-npm install
-```
-
-**3. 构建项目**
-
-```bash
-pnpm build
-```
-
-构建完成后,会在项目根目录生成 `dist` 文件夹。
-
-**4. 部署到本地服务器**
-
-**方法一: 使用 IIS (适合 Windows Server)**
-
-1. 打开 IIS 管理器
-2. 添加网站
-   - 物理路径: 指向 `dist` 文件夹
-   - 绑定端口: 80 或其他端口
-3. 安装 URL Rewrite 模块 (重要!)
-4. 在网站根目录创建 `web.config` 文件:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <system.webServer>
-    <rewrite>
-      <rules>
-        <rule name="Vue Router" stopProcessing="true">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-          </conditions>
-          <action type="Rewrite" url="/" />
-        </rule>
-      </rules>
-    </rewrite>
-  </system.webServer>
-</configuration>
-```
-
-**方法二: 使用 Nginx for Windows**
-
-1. 下载 Nginx for Windows: http://nginx.org/en/download.html
-2. 解压到指定目录
-3. 修改 `conf/nginx.conf`:
-
-```nginx
-server {
-    listen       80;
-    server_name  localhost;
-
-    location / {
-        root   D:/path/to/dist;
-        index  index.html;
-        try_files $uri $uri/ /index.html;
-    }
-}
-```
-
-4. 启动 Nginx: `nginx.exe`
-
-**方法三: 使用 Node.js 静态服务器**
-
-```bash
-# 安装 serve 工具
-npm install -g serve
-
-# 启动服务
-cd dist
-serve -s . -p 80
-```
-
-**方法四: 使用 Python 简单服务器**
-
-```bash
-cd dist
-python -m http.server 8080
-```
-
-**5. 访问应用**
-
-- 本地访问: http://localhost
-- 或根据配置的端口访问
-
-#### Windows 部署注意事项
-
-⚠️ **重要提示**:
-
-1. **防火墙设置**: 确保 Windows 防火墙允许相应端口访问
-2. **权限问题**: 确保运行账户对 `dist` 文件夹有读取权限
-3. **路径分隔符**: 配置文件中使用 `/` 而非 `\` 作为路径分隔符
-4. **URL Rewrite**: IIS 部署必须安装 URL Rewrite 模块,否则刷新页面会404
-5. **端口占用**: 确保 80 端口未被其他程序占用,或更换为其他端口
-6. **中文路径**: 避免项目路径包含中文字符
-
----
-
-### Ubuntu/Linux 部署
-
-#### 前置要求
-
-1. 安装 Node.js
-
-```bash
-# 方法一: 使用 NodeSource 仓库 (推荐)
+# 使用 NodeSource 官方仓库
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+# 安装 Node.js
 sudo apt-get install -y nodejs
 
 # 验证安装
-node -v
-npm -v
+node -v  # 应显示 v18.x.x
+npm -v   # 应显示 v9.x.x 或更高
 ```
 
-2. 安装包管理工具
+### 三、安装和配置 Nginx
 
-```bash
-# 安装 pnpm (推荐)
-npm install -g pnpm
+```sudo apt install -y nginx
+# 启动 Nginx
+sudo systemctl start nginx
 
-# 或使用 npm/yarn
+# 设置开机自启
+sudo systemctl enable nginx
+
+# 验证状态
+sudo systemctl status nginx
 ```
 
-3. 安装 Git
+#### 3.2 验证 Nginx
 
-```bash
-sudo apt update
-sudo apt install git
+```
+# 测试配置
+sudo nginx -t
+
+# 在浏览器访问
+http://服务器IP
 ```
 
-#### 部署步骤
+### 四、部署抽奖系统
 
-**1. 克隆项目**
+#### 4.1 上传文件
 
-```bash
-git clone https://github.com/LOG1997/log-lottery.git
-cd log-lottery
+```
+# 上传压缩包到 /opt目录，解压
+root@u-208:/opt#7z x ct-lottery-main.7z 
+
+#cd /opt/ct-lottery-main
+
 ```
 
-**2. 安装依赖**
+### 4.2 创建项目目录
 
-```bash
-# 使用 pnpm
-pnpm install
+```
+# 创建部署目录
+sudo mkdir -p /var/www/ct-lottery-main
 
-# 或使用 npm
-npm install
+# 设置所有者（将 username 替换为您的用户名）
+sudo chown -R $root:$root /opt/ct-lottery-main
+sudo chown -R $root:$root /var/www/ct-lottery
 ```
 
-**3. 构建项目**
 
-```bash
-pnpm build
+
+#### 4.3 安装依赖
+
+```
+cd /opt/ct-lottery-main
+
+# 使用 npm（推荐）
+npm install --legacy-peer-deps
+
+# 或使用 pnpm
+# npm install -g pnpm
+# pnpm install
 ```
 
-**4. 部署到服务器**
+#### 4.4 构建项目
 
-**方法一: 使用 Nginx (推荐)**
-
-1. 安装 Nginx
-
-```bash
-sudo apt update
-sudo apt install nginx
+```npm run build
+npm run build
 ```
 
-2. 配置 Nginx
+<img width="625" height="137" alt="image" src="https://github.com/user-attachments/assets/e8cf9159-a4ca-4fd3-80ce-5d5e91b6d501" />
 
-创建配置文件 `/etc/nginx/sites-available/log-lottery`:
 
-```nginx
+提示：权限问题！vue-tsc 没有执行权限。
+
+## 解决方案
+
+```
+# 方法一：修复 node_modules 权限（推荐）
+chmod +x node_modules/.bin/vue-tsc
+chmod +x node_modules/.bin/vite
+
+# 重新构建
+
+npm run build
+
+```
+
+提示这个：
+
+<img width="717" height="230" alt="image" src="https://github.com/user-attachments/assets/d12b0f1d-836c-4b44-8d11-9fc3777aae1c" />
+
+
+那就用这个命令：
+
+```
+npm install --legacy-peer-deps
+npx vite build
+```
+
+<img width="712" height="748" alt="image" src="https://github.com/user-attachments/assets/e7bad165-fc8f-4aec-9382-f931de33f086" />
+
+
+
+
+构建成功后会生成 `dist` 文件夹。
+
+### 五、部署前端文件
+
+```
+# 复制构建文件到部署目录
+sudo cp -r dist/* /var/www/ct-lottery/
+
+# 复制必要的资源文件
+sudo cp -r public/fonts /var/www/ct-lottery/
+sudo cp -r public/templates /var/www/ct-lottery/
+
+# 设置正确的权限
+sudo chown -R www-data:www-data /var/www/ct-lottery
+sudo chmod -R 755 /var/www/ct-lottery
+
+# 验证文件
+ls -la /var/www/ct-lottery/
+```
+<img width="756" height="518" alt="image" src="https://github.com/user-attachments/assets/7a3b48c6-0fc5-4a08-bd02-746129e8e32d" />
+
+
+-------------
+
+### 六、创建 systemd 服务文件
+
+```
+sudo vim /etc/systemd/system/lottery-backend.service
+```
+
+注意问题点：
+
+###### 1. 先检查 Node.js 实际路径
+
+```
+which node
+```
+
+记下返回的路径。
+
+###### 2. 检查 server.cjs 是否存在
+
+```
+ls -la /opt/ct-lottery-main/server.cjs
+```
+
+
+
+```
+修改 ExecStart 行，将 /usr/bin/node 替换为实际的 Node.js 路径。
+
+例如，如果 which node 返回 /root/.nvm/versions/node/v20.19.0/bin/node，则改为：
+
+ExecStart=/root/.nvm/versions/node/v20.19.0/bin/node /opt/ct-lottery-main/server.cjs
+```
+
+
+<img width="1684" height="465" alt="image" src="https://github.com/user-attachments/assets/52bb75c9-95bf-4161-89b1-1098e8b32785" />
+
+
+
+
+粘贴以下内容：
+
+```
+[Unit]
+Description=Lottery Backend Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/ct-lottery-main
+Environment=NODE_ENV=production
+Environment=PORT=3001
+ExecStart=/usr/bin/node /opt/ct-lottery-main/server.cjs
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=lottery-backend
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+##### 启动和管理服务
+
+```
+# 重载 systemd 配置
+sudo systemctl daemon-reload
+
+# 启动服务
+sudo systemctl start lottery-backend
+
+# 查看服务状态
+sudo systemctl status lottery-backend
+
+# 设置开机自启
+sudo systemctl enable lottery-backend
+
+# 查看服务日志
+sudo journalctl -u lottery-backend -f
+
+# 停止服务
+sudo systemctl stop lottery-backend
+
+# 重启服务
+sudo systemctl restart lottery-backend
+
+```
+<img width="722" height="310" alt="image" src="https://github.com/user-attachments/assets/e5364f82-d957-47f9-9499-8323a9e67dd3" />
+
+
+##### 验证服务
+
+```
+# 查看服务状态
+sudo systemctl status lottery-backend
+
+# 测试后端 API
+curl http://localhost:3001/api/fonts
+
+```
+
+<img width="730" height="61" alt="image" src="https://github.com/user-attachments/assets/d4b825a5-bef3-475b-90ec-a7a07b2bb1fd" />
+
+
+----
+
+### 七、配置 Nginx
+
+#### 7.1 创建 Nginx 配置文件
+
+```
+sudo vim /etc/nginx/sites-available/ct-lottery
+```
+
+粘贴以下内容：
+
+```
 server {
     listen 80;
-    server_name your-domain.com;  # 替换为你的域名或IP
+    server_name _;
 
-    root /var/www/log-lottery/dist;
+    charset utf-8;
+
+    root /var/www/ct-lottery;
     index index.html;
 
-    # Gzip 压缩
+    access_log /var/log/nginx/ct-lottery-access.log;
+    error_log /var/log/nginx/ct-lottery-error.log;
+
     gzip on;
     gzip_vary on;
     gzip_min_length 1024;
-    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss application/javascript;
+    gzip_comp_level 6;
+    gzip_types
+        text/plain
+        text/css
+        text/xml
+        text/javascript
+        application/json
+        application/javascript
+        application/x-javascript
+        application/xml+rss;
 
     location / {
         try_files $uri $uri/ /index.html;
     }
 
-    # 静态资源缓存
     location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
         expires 1y;
         add_header Cache-Control "public, immutable";
+        access_log off;
+    }
+
+    location /fonts/ {
+        alias /var/www/ct-lottery/fonts/;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    location /templates/ {
+        alias /var/www/ct-lottery/templates/;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_cache_bypass $http_upgrade;
+        proxy_connect_timeout 60s;
+        proxy_send_timeout 60s;
+        proxy_read_timeout 60s;
+    }
+
+    location /ws/ {
+        proxy_pass http://localhost:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_read_timeout 86400;
+    }
+
+    location ~ /\. {
+        deny all;
+        access_log off;
+        log_not_found off;
     }
 }
+
 ```
 
-3. 启用配置
+#### 7.2 启用配置
 
-```bash
-sudo ln -s /etc/nginx/sites-available/log-lottery /etc/nginx/sites-enabled/
-sudo nginx -t  # 测试配置
+```
+# 删除默认配置
+sudo rm /etc/nginx/sites-enabled/default
+
+# 创建软链接
+sudo ln -s /etc/nginx/sites-available/ct-lottery /etc/nginx/sites-enabled/
+
+# 测试配置
+sudo nginx -t
+
+# 如果显示 "syntax is ok" 和 "test is successful"，重启 Nginx
 sudo systemctl restart nginx
+
+# 查看 Nginx 状态
+sudo systemctl status nginx
+
 ```
 
-4. 复制文件到网站目录
+### 八、测试部署
 
-```bash
-sudo mkdir -p /var/www/log-lottery
-sudo cp -r dist/* /var/www/log-lottery/
-sudo chown -R www-data:www-data /var/www/log-lottery
-sudo chmod -R 755 /var/www/log-lottery
+#### 8.1 本地测试
+
+```
+# 测试前端
+curl http://localhost
+
+# 测试后端 API
+curl http://localhost:3001/api/fonts
+
+# 测试 Nginx 代理
+curl http://localhost/api/fonts
+
 ```
 
-**方法二: 使用 Apache**
+#### 8.2 外网测试
 
-1. 安装 Apache
+在浏览器访问：
 
-```bash
-sudo apt install apache2
 ```
-
-2. 启用模块
-
-```bash
-sudo a2enmod rewrite
-sudo systemctl restart apache2
+http://服务器IP
+# 或
+https://your-domain.com
 ```
-
-3. 配置 VirtualHost
-
-创建 `/etc/apache2/sites-available/log-lottery.conf`:
-
-```apache
-<VirtualHost *:80>
-    ServerName your-domain.com
-    DocumentRoot /var/www/log-lottery/dist
-
-    <Directory /var/www/log-lottery/dist>
-        RewriteEngine On
-        RewriteBase /
-        RewriteRule ^index\.html$ - [L]
-        RewriteCond %{REQUEST_FILENAME} !-f
-        RewriteCond %{REQUEST_FILENAME} !-d
-        RewriteRule . /index.html [L]
-    </Directory>
-</VirtualHost>
-```
-
-4. 启用站点
-
-```bash
-sudo a2ensite log-lottery
-sudo systemctl reload apache2
-```
-
-**方法三: 使用 Docker**
-
-```bash
-# 构建镜像
-docker build -t log-lottery .
-
-# 运行容器
-docker run -d -p 80:80 --name log-lottery log-lottery
-```
-
-**方法四: 使用 PM2 (Node.js 进程管理)**
-
-```bash
-# 安装 PM2
-npm install -g pm2
-
-# 使用 serve 部署
-cd dist
-pm2 start "serve -s . -p 80" --name log-lottery
-
-# 开机自启
-pm2 startup
-pm2 save
-```
-
-**5. 配置 HTTPS (可选但推荐)**
-
-使用 Let's Encrypt 免费证书:
-
-```bash
-# 安装 Certbot
-sudo apt install certbot python3-certbot-nginx
-
-# 获取证书
-sudo certbot --nginx -d your-domain.com
-
-# 自动续期
-sudo certbot renew --dry-run
-```
-
-#### Ubuntu/Linux 部署注意事项
-
-⚠️ **重要提示**:
-
-1. **权限问题**: 确保对 `/var/www` 目录有正确的读写权限
-2. **防火墙**: 确保防火墙开放 80/443 端口
-
-```bash
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw enable
-```
-
-3. **SELinux**: 如果启用了 SELinux,需要设置正确的上下文
-
-```bash
-sudo chcon -R -t httpd_sys_content_t /var/www/log-lottery
-```
-
-4. **Node.js 版本**: 确保使用支持的 Node.js 版本(>=16.0.0)
-5. **内存限制**: 对于大流量网站,可能需要调整 Nginx/Apache 的内存配置
-6. **日志监控**: 定期检查日志文件排查问题
-
-```bash
-# Nginx 日志
-sudo tail -f /var/log/nginx/access.log
-sudo tail -f /var/log/nginx/error.log
-
-# Apache 日志
-sudo tail -f /var/log/apache2/access.log
-sudo tail -f /var/log/apache2/error.log
-```
-
-7. **定期备份**: 建议定期备份配置和数据
 
 ---
 
-## 🎮 使用说明
+### Ubuntu 常见问题
 
-### 抽奖流程
+#### 1. 端口被占用
 
-#### 📋 准备阶段
+```
+# 查看占用端口的进程
+sudo lsof -i :80
+sudo lsof -i :3001
 
-1. **配置人员名单**
-   - 进入【人员配置】-【全部人员】
-   - 下载 Excel 模板
-   - 按要求填写人员信息(工号、姓名、部门、身份等)
-   - 导入 Excel 文件
+# 结束进程
+sudo kill -9 PID
 
-2. **设置奖项和奖品**
-   - 进入【奖项配置】
-   - 添加奖项(一等奖、二等奖、三等奖等)
-   - 设置每项奖品的数量和图片
-   - 配置抽奖规则(是否全员参加等)
+```
 
-3. **配置界面(可选)**
-   - 进入【全局配置】-【界面配置】
-   - 设置活动标题、列数、颜色等
-   - 上传背景图片
-   - 配置首页图案
+#### 2. 权限问题
 
-4. **上传音乐(可选)**
-   - 进入【图片和音乐】
-   - 上传背景音乐
+```
+# 重新设置权限
+sudo chown -R www-data:www-data /var/www/lottery
+sudo chmod -R 755 /var/www/lottery
+```
 
-5. **配置指定人员(可选)**
-   - 进入配置页面底部
-   - 点击齿轮图标进入高级设置
-   - 输入密码(admin888)
-   - 为需要指定人员的奖项配置指定中奖名单
+#### 3. 查看日志
 
-#### 🎲 抽奖操作
+```
+# Nginx 访问日志
+sudo tail -f /var/log/nginx/lottery-access.log
 
-1. 进入抽奖首页
-2. 按键盘 **空格键** 或点击【进入抽奖准备】
-3. 卡片会聚集成3D球体
-4. 按键盘 **空格键** 或点击【开始】
-5. 卡片开始快速旋转
-6. 按键盘 **空格键** 或点击【选取中奖人员】
-7. 系统显示中奖名单并播放庆祝动画
-8. 可选择:
-   - 点击【继续】继续下一轮抽奖
-   - 点击【取消】放弃当前结果重新抽奖
-   - 点击【恢复飘舞效果】返回初始状态(不清除数据)
-   - 点击【查看中奖名单】查看所有中奖人员
+# Nginx 错误日志
+sudo tail -f /var/log/nginx/lottery-error.log
 
-### 键盘快捷键
+# PM2 日志
+pm2 logs lottery-backend
 
-| 快捷键 | 功能 |
-|--------|------|
-| **空格键** | 进入抽奖 / 开始抽奖 / 停止抽奖 / 继续抽奖 |
-| **ESC键** | 取消当前抽奖状态 |
+# 系统日志
+sudo journalctl -u nginx -f
 
-### 高级功能使用
+```
 
-#### 🔐 指定人员抽奖
+#### 4. 构建失败
 
-1. 进入配置页面
-2. 点击页面底部的齿轮图标 ⚙️
-3. 输入密码: `admin888`
-4. 为需要指定人员的奖项开启"指定模式"
-5. 点击"添加人员"
-6. 输入工号,支持批量输入(格式: `U1001,U1002,U1003`)
-7. 管理指定人员列表(可删除单个或清空全部)
-8. 保存配置
-
-**注意事项**:
-- 指定人员必须在人员名单中存在
-- 指定人员中奖后会自动从其他奖项的指定名单中移除
-- 指定人员模式优先于普通抽奖模式
-
-#### 📋 查看中奖名单
-
-1. 抽奖完成后,点击【查看中奖名单】按钮
-2. 弹出中奖名单对话框
-3. 可使用筛选功能:
-   - 按奖项筛选: 选择特定的奖项查看
-   - 按关键词搜索: 输入工号或姓名搜索
-4. 查看详细中奖信息:
-   - 工号
-   - 姓名
-   - 部门
-   - 身份
-   - 中奖奖项
-   - 中奖时间
-5. 点击【关闭】退出
+```
+# 清理并重新安装
+rm -rf node_modules package-lock.json
+npm install --legacy-peer-deps
+npm run build
+```
 
 ---
 
-## 🛠️ 技术栈
+### Ubuntu 更新
 
-| 技术 | 说明 |
-|------|------|
-| **Vue 3** | 渐进式 JavaScript 框架 |
-| **TypeScript** | 类型安全的 JavaScript 超集 |
-| **Vite** | 下一代前端构建工具 |
-| **Three.js** | 3D 图形库,实现炫酷3D效果 |
-| **TWEEN.js** | 平滑动画库 |
-| **Pinia** | Vue 官方推荐的状态管理库 |
-| **DaisyUI** | 基于 Tailwind CSS 的组件库 |
-| **IndexedDB** | 浏览器本地数据库 |
-| **canvas-confetti** | 纸屑庆祝动画库 |
-| **Element Plus** | Vue 3 组件库 |
+```
+# 1. 进入项目目录
+cd /home/lottery
 
----
+# 2. 拉取最新代码
+git pull
 
-## 📸 屏幕截图
+# 3. 安装新依赖
+npm install --legacy-peer-deps
 
-更多截图请查看项目 [static/images](./static/images/) 目录。
+# 4. 重新构建
+npm run build
 
----
+# 5. 复制新文件
+sudo cp -r dist/* /var/www/lottery/
+sudo cp -r public/* /var/www/lottery/
 
-## 🤝 贡献
+# 6. 重新设置权限
+sudo chown -R www-data:www-data /var/www/lottery
+sudo chmod -R 755 /var/www/lottery
 
-欢迎贡献代码、报告问题或提出新功能建议!
+# 7. 重启后端
+pm2 restart lottery-backend
 
-1. Fork 本项目
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
+# 8. 重新加载 Nginx
+sudo systemctl reload nginx
 
----
+```
 
-## 📝 TODO
 
-- [x] 🕍 炫酷3D球体,年会抽奖必备,开箱即用
-- [x] 💾 本地持久化存储
-- [x] 🎁 奖品奖项配置
-- [x] 👱 抽奖名单设置管理
-- [x] 🎼 播放背景音乐
-- [x] 🖼️ excel表格导入人员名单、抽奖结果使用excel导出
-- [x] 🎈 可增加临时抽奖
-- [x] 🧨 国际化多语言
-- [x] 🍃 更换背景图片
-- [x] 🚅 添加docker构建
-- [x] 🎯 指定人员抽奖功能
-- [x] 🖱️ 鼠标悬停卡片放大效果
-- [x] 🔐 取消抽奖确认对话框
-- [x] 📋 中奖名单查看和筛选
-- [x] ✨ 恢复飘舞效果功能
-- [ ] 🧵 卡片组成多种形状(开发中)
-- [ ] 😘 弹幕功能(开发中)
 
----
 
-## ❓ 常见问题
 
-### Q: 忘记高级设置密码怎么办?
-**A**: 修改 `src/views/Config/Special/index.vue` 文件中的 `defaultPassword` 常量值。
+## 📁 重要文件位置 Ubuntu
 
-### Q: 指定人员不生效?
-**A**: 请确保:
-1. 工号格式正确,与人员名单中的工号完全一致
-2. 指定人员存在于人员名单中
-3. 指定人员尚未中奖
-4. 该奖项已开启"指定模式"
+| 文件/目录      | 位置                                 |
+| -------------- | ------------------------------------ |
+| 项目源码       | `/home/lottery`                      |
+| 部署文件       | `/var/www/lottery`                   |
+| Nginx 配置     | `/etc/nginx/sites-available/lottery` |
+| Nginx 访问日志 | `/var/log/nginx/lottery-access.log`  |
+| Nginx 错误日志 | `/var/log/nginx/lottery-error.log`   |
+| PM2 配置       | `/home/lottery/ecosystem.config.js`  |
 
-### Q: 抽奖人数设置无效?
-**A**: 检查全局设置中是否启用了"自定义抽奖人数"选项。
+## 🎯 快速参考
 
-### Q: 页面显示异常或图片无法加载?
-**A**: 尝试以下步骤:
-1. 清除浏览器缓存
-2. 在【全局配置】-【界面配置】中点击【重置所有数据】
-3. 检查 Node.js 版本是否符合要求(>=16.0.0)
-4. 检查浏览器是否为最新版 Chrome 或 Edge
+### 端口说明
 
-### Q: 刷新页面后数据丢失?
-**A**: 本项目使用浏览器本地存储(IndexedDB 和 localStorage),数据存储在浏览器中。建议定期导出重要数据作为备份。
+| 服务                | 端口 | 说明                                    |
+| ------------------- | ---- | --------------------------------------- |
+| 前端（Nginx）       | 80   | HTTP 访问                               |
+| 前端（Nginx HTTPS） | 443  | HTTPS 访问                              |
+| 后端 API            | 3001 | 内部使用，不对外暴露                    |
+| WebSocket           | 3001 | 与后端同端口，路径 `/ws/mobile-control` |
 
-### Q: 导入 Excel 失败?
-**A**: 请确保:
-1. 使用正确的 Excel 模板
-2. 必填字段都已填写(工号、姓名)
-3. 文件格式为 .xlsx
-4. 文件大小不超过限制
+**Ubuntu：**
 
-### Q: 抽奖过程中卡顿?
-**A**: 可能的原因:
-1. 人员数量过多,建议分批次抽奖
-2. 浏览器性能不足,建议使用 Chrome 或 Edge 最新版
-3. 电脑硬件性能较低,关闭其他占用资源的程序
+```
+# Nginx
+sudo nginx -t                    # 测试配置
+sudo systemctl reload nginx     # 重新加载
+sudo systemctl restart nginx    # 重启
 
----
+# PM2
+pm2 status                      # 查看状态
+pm2 logs                        # 查看日志
+pm2 restart lottery-backend     # 重启服务
 
-## 🌐 在线演示
+# 防火墙
+sudo ufw status                 # 查看状态
 
-访问地址:
+```
 
-- <https://to2026.xyz/log-lottery>
-- <https://log1997.github.io/log-lottery/>
 
----
 
-## 📞 技术支持
+1. 登录系统（使用默认账号 `admin` / 密码 `admin123`）
+2. 手机扫码，验证码默认：123456
+3. 点击齿轮图标 ⚙️ 进入高级设置
+4. 输入高级设置密码（默认：`admin888`）
 
-如遇到问题或需要帮助:
 
-1. 查看 [常见问题](#常见问题) 部分
-2. 搜索 [Issues](https://github.com/LOG1997/log-lottery/issues)
-3. 提交新的 [Issue](https://github.com/LOG1997/log-lottery/issues/new)
-4. 查看项目文档和代码注释
 
----
-
-## 📄 License
-
-本项目采用 [MIT](http://opensource.org/licenses/MIT) 许可证开源。
-
----
-
-## 🙏 致谢
-
-项目思路来源于 <https://github.com/moshang-xc/lottery>
-
-感谢所有为该项目做出贡献的开发者!
-
----
-
-<div align="center">
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=LOG1997/log-lottery&type=Date)](https://star-history.com/#LOG1997/log-lottery&Date)
-
----
-
-**Made with ❤️ by [log1997](https://github.com/log1997)**
-
-如果这个项目对你有帮助,请给个 ⭐ Star 支持一下!
-
-</div>
