@@ -1,0 +1,474 @@
+<script setup lang='ts'>
+import i18n, { languageList } from '@/locales/i18n'
+
+import useStore from '@/store'
+import { themeChange } from '@/utils'
+import { isHex, isRgbOrRgba } from '@/utils/color'
+import daisyuiThemes from 'daisyui/src/theming/themes'
+import { storeToRefs } from 'pinia'
+import { onMounted, ref, watch } from 'vue'
+import { ColorPicker } from 'vue3-colorpicker'
+import { useI18n } from 'vue-i18n'
+import zod from 'zod'
+import PatternSetting from './components/PatternSetting.vue'
+import 'vue3-colorpicker/style.css'
+
+const { t } = useI18n()
+const globalConfig = useStore().globalConfig
+const personConfig = useStore().personConfig
+const prizeConfig = useStore().prizeConfig
+const { getTopTitle: topTitle, getTheme: localTheme, getPatterColor: patternColor, getPatternList: patternList, getCardColor: cardColor, getLuckyColor: luckyCardColor, getTextColor: textColor, getCardSize: cardSize, getTextSize: textSize, getRowCount: rowCount, getIsShowPrizeList: isShowPrizeList, getLanguage: userLanguage, getBackground: backgroundImage, getImageList: imageList, getIsShowAvatar: isShowAvatar, getDrawConfig: drawConfig, getTitleConfig: titleConfig
+} = storeToRefs(globalConfig)
+const { getAlreadyPersonList: alreadyPersonList, getNotPersonList: notPersonList } = storeToRefs(personConfig)
+const colorPickerRef = ref()
+const resetDataDialogRef = ref()
+interface ThemeDaType {
+  [key: string]: any
+}
+const isRowCountChange = ref(0) // 0未改变，1改变,2加载中
+const themeValue = ref(localTheme.value.name)
+const topTitleValue = ref(structuredClone(topTitle.value))
+const cardColorValue = ref(structuredClone(cardColor.value))
+const luckyCardColorValue = ref(structuredClone(luckyCardColor.value))
+const textColorValue = ref(structuredClone(textColor.value))
+const cardSizeValue = ref(structuredClone(cardSize.value))
+const textSizeValue = ref(structuredClone(textSize.value))
+const rowCountValue = ref(structuredClone(rowCount.value))
+const languageValue = ref(structuredClone(userLanguage.value))
+const isShowPrizeListValue = ref(structuredClone(isShowPrizeList.value))
+const isShowAvatarValue = ref(structuredClone(isShowAvatar.value))
+const patternColorValue = ref(structuredClone(patternColor.value))
+const themeList = ref(Object.keys(daisyuiThemes))
+const daisyuiThemeList = ref<ThemeDaType>(daisyuiThemes)
+const backgroundImageValue = ref(backgroundImage.value)
+const formData = ref({
+  rowCount: rowCountValue,
+})
+
+// 抽奖配置
+const customDrawCountValue = ref(structuredClone(drawConfig.value.customDrawCount))
+const enableCustomCountValue = ref(structuredClone(drawConfig.value.enableCustomCount))
+const autoSwitchNextPrizeValue = ref(structuredClone(drawConfig.value.autoSwitchNextPrize ?? false))
+const formErr = ref({
+  rowCount: '',
+})
+const schema = zod.object({
+  rowCount: zod.number({
+    required_error: i18n.global.t('error.require'),
+    invalid_type_error: i18n.global.t('error.requireNumber'),
+  })
+    .min(1, i18n.global.t('error.minNumber1'))
+    .max(100, i18n.global.t('error.maxNumber100')),
+  // 格式化
+
+})
+type ValidatePayload = zod.infer<typeof schema>
+const payload: ValidatePayload = {
+  rowCount: formData.value.rowCount,
+}
+function parseSchema(props: ValidatePayload) {
+  return schema.parseAsync(props)
+}
+
+function resetPersonLayout() {
+  isRowCountChange.value = 2
+  setTimeout(() => {
+    const alreadyLen = alreadyPersonList.value.length
+    const notLen = notPersonList.value.length
+    if (alreadyLen <= 0 && notLen <= 0) {
+      return
+    }
+    const allPersonList = alreadyPersonList.value.concat(notPersonList.value)
+    const newAlreadyPersonList = allPersonList.slice(0, alreadyLen)
+    const newNotPersonList = allPersonList.slice(alreadyLen, notLen + alreadyLen)
+    personConfig.deleteAllPerson()
+    personConfig.addNotPersonList(newNotPersonList)
+    personConfig.addAlreadyPersonList(newAlreadyPersonList, null)
+
+    isRowCountChange.value = 0
+  }, 1000)
+}
+
+function clearPattern() {
+  globalConfig.setPatternList([] as number[])
+}
+function resetPattern() {
+  globalConfig.resetPatternList()
+}
+
+function resetData() {
+  globalConfig.reset()
+  personConfig.reset()
+  prizeConfig.resetDefault()
+  // 刷新页面
+  window.location.reload()
+}
+
+// const handleChangeShowFields = (fieldItem: any) => {
+//     formData.value.showField.map((item) => {
+//         if (item.label === fieldItem.label) {
+//             item.value = !item.value
+//         }
+//     })
+// }
+
+watch(() => formData.value.rowCount, () => {
+  payload.rowCount = formData.value.rowCount
+  parseSchema(payload).then((res) => {
+    if (res.rowCount) {
+      isRowCountChange.value = 1
+      globalConfig.setRowCount(res.rowCount)
+    }
+  }).catch((err) => {
+    formErr.value.rowCount = err.issues[0].message
+  })
+})
+
+watch(topTitleValue, (val) => {
+  globalConfig.setTopTitle(val)
+})
+
+// 标题配置
+const titleFontSize = ref(titleConfig.value.fontSize)
+const titleColor = ref('#ffffff')
+
+watch(titleFontSize, (val) => {
+  globalConfig.setTitleFontSize(val)
+}, { deep: true })
+
+watch(titleColor, (val: string) => {
+  // 标题颜色直接使用textColor，无需单独存储
+  globalConfig.setTextColor(val)
+}, { deep: true })
+watch(themeValue, (val: any) => {
+  const selectedThemeDetail = daisyuiThemeList.value[val]
+  globalConfig.setTheme({ name: val, detail: selectedThemeDetail })
+  themeChange(val)
+  if (selectedThemeDetail.primary && (isHex(selectedThemeDetail.primary) || isRgbOrRgba(selectedThemeDetail.primary))) {
+    globalConfig.setCardColor(selectedThemeDetail.primary)
+  }
+}, { deep: true })
+
+watch(cardColorValue, (val: string) => {
+  globalConfig.setCardColor(val)
+}, { deep: true })
+watch(luckyCardColorValue, (val: string) => {
+  globalConfig.setLuckyCardColor(val)
+}, { deep: true })
+watch(patternColorValue, (val: string) => {
+  globalConfig.setPatterColor(val)
+})
+watch(textColorValue, (val: string) => {
+  globalConfig.setTextColor(val)
+}, { deep: true })
+
+watch(cardSizeValue, (val: { width: number, height: number }) => {
+  globalConfig.setCardSize(val)
+}, { deep: true })
+
+watch(isShowPrizeListValue, () => {
+  globalConfig.setIsShowPrizeList(isShowPrizeListValue.value)
+})
+watch(backgroundImageValue, (val) => {
+  globalConfig.setBackground(val)
+})
+watch(languageValue, (val: string) => {
+  globalConfig.setLanguage(val)
+})
+watch(isShowAvatarValue, () => {
+    globalConfig.setIsShowAvatar(isShowAvatarValue.value)
+})
+watch(enableCustomCountValue, () => {
+    globalConfig.setDrawConfig({
+        customDrawCount: customDrawCountValue.value,
+        enableCustomCount: enableCustomCountValue.value,
+        autoSwitchNextPrize: autoSwitchNextPrizeValue.value
+    })
+})
+watch(customDrawCountValue, () => {
+    globalConfig.setDrawConfig({
+        customDrawCount: customDrawCountValue.value,
+        enableCustomCount: enableCustomCountValue.value,
+        autoSwitchNextPrize: autoSwitchNextPrizeValue.value
+    })
+})
+watch(autoSwitchNextPrizeValue, () => {
+    globalConfig.setDrawConfig({
+        customDrawCount: customDrawCountValue.value,
+        enableCustomCount: enableCustomCountValue.value,
+        autoSwitchNextPrize: autoSwitchNextPrizeValue.value
+    })
+})
+onMounted(() => {
+})
+</script>
+
+<template>
+  <dialog id="my_modal_1" ref="resetDataDialogRef" class="border-none modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">
+        {{ t('dialog.titleTip') }}
+      </h3>
+      <p class="py-4">
+        {{ t('dialog.dialogResetAllData') }}
+      </p>
+      <div class="modal-action">
+        <form method="dialog" class="flex gap-3">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn" @click="resetDataDialogRef.close()">
+            {{ t(`button.cancel`) }}
+          </button>
+          <button class="btn" @click="resetData">
+            {{ t('button.confirm') }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <div>
+    <h2>{{ t('viewTitle.globalSetting') }}</h2>
+    <div class="mb-8">
+      <button class="btn btn-sm btn-primary" @click="resetDataDialogRef.showModal()">
+        {{ t('button.resetAllData') }}
+      </button>
+    </div>
+    <label class="flex flex-row items-center w-full gap-24 mb-10 form-control">
+      <div class="">
+        <div class="label">
+          <span class="label-text">{{ t('table.title') }}</span>
+        </div>
+        <input
+          v-model="topTitleValue" type="text" :placeholder="t('placeHolder.enterTitle')"
+          class="w-full max-w-xs input input-bordered"
+        >
+      </div>
+    </label>
+
+    <!-- 标题配置 -->
+    <div class="p-4 mb-6 border rounded-lg border-base-300">
+      <h3 class="mb-4 font-bold">{{ t('config.titleConfig') }}</h3>
+      <div class="flex flex-wrap gap-4">
+        <label class="w-full max-w-xs form-control">
+          <div class="label">
+            <span class="label-text">{{ t('config.titleFontSize') }}</span>
+          </div>
+          <input
+            v-model="titleFontSize" type="number" min="20" max="200"
+            class="w-full max-w-xs input input-bordered"
+            :placeholder="t('config.titleFontSizePlaceholder')"
+          >
+        </label>
+        <label class="w-full max-w-xs form-control">
+          <div class="label">
+            <span class="label-text">{{ t('config.titleColor') }}</span>
+          </div>
+          <ColorPicker v-model="titleColor" v-model:pure-color="titleColor" />
+        </label>
+      </div>
+    </div>
+    <label class="flex flex-row items-center w-full gap-24 mb-10 form-control">
+      <div class="">
+        <div class="label">
+          <span class="label-text">{{ t('table.columnNumber') }}</span>
+        </div>
+        <input
+          v-model="formData.rowCount" type="number" placeholder="Type here"
+          class="w-full max-w-xs input input-bordered"
+        >
+        <div class="help">
+          <span v-if="formErr.rowCount" class="text-sm text-red-400 help-text">
+            {{ formErr.rowCount }}
+          </span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltip" :data-tip="t('tooltip.resetLayout')">
+          <button class="mt-5 btn btn-info btn-sm" :disabled="isRowCountChange !== 1" @click="resetPersonLayout">
+            <span>{{ t('button.setLayout') }}</span>
+            <span v-show="isRowCountChange === 2" class="loading loading-ring loading-md" />
+          </button>
+        </div>
+      </div>
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.language') }}</span>
+      </div>
+      <select v-model="languageValue" data-choose-theme class="w-full max-w-xs border-solid select border-1">
+        <option disabled selected>{{ t('table.language') }}</option>
+        <option v-for="item in languageList" :key="item.key" :value="item.key">{{ item.name }}</option>
+      </select>
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.theme') }}</span>
+      </div>
+      <select v-model="themeValue" data-choose-theme class="w-full max-w-xs border-solid select border-1">
+        <option disabled selected>{{ t('table.theme') }}</option>
+        <option v-for="(item, index) in themeList" :key="index" :value="item">{{ item }}</option>
+      </select>
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.backgroundImage') }}</span>
+      </div>
+      <select
+        v-model="backgroundImageValue" data-choose-theme
+        class="w-full max-w-xs border-solid select border-1"
+      >
+        <option disabled selected>{{ t('table.backgroundImage') }}</option>
+        <option
+          v-for="(item, index) in [{ name: '❌', url: '', id: '' }, ...imageList]" :key="index"
+          :value="item"
+        >{{ item.name }}</option>
+      </select>
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.cardColor') }}</span>
+      </div>
+      <ColorPicker ref="colorPickerRef" v-model="cardColorValue" v-model:pure-color="cardColorValue" />
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.winnerColor') }}</span>
+      </div>
+      <ColorPicker ref="colorPickerRef" v-model="luckyCardColorValue" v-model:pure-color="luckyCardColorValue" />
+    </label>
+
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.textColor') }}</span>
+      </div>
+      <ColorPicker ref="colorPickerRef" v-model="textColorValue" v-model:pure-color="textColorValue" />
+    </label>
+    <label class="flex flex-row w-full max-w-xs gap-10 mb-10 form-control">
+      <div>
+        <div class="label">
+          <span class="label-text">{{ t('table.cardWidth') }}</span>
+        </div>
+        <input
+          v-model="cardSizeValue.width" type="number" placeholder="Type here"
+          class="w-full max-w-xs input input-bordered"
+        >
+      </div>
+      <div>
+        <div class="label">
+          <span class="label-text">{{ t('table.cardHeight') }}</span>
+        </div>
+        <input
+          v-model="cardSizeValue.height" type="number" placeholder="Type here"
+          class="w-full max-w-xs input input-bordered"
+        >
+      </div>
+    </label>
+    <label class="w-full max-w-xs mb-10 form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.textSize') }}</span>
+      </div>
+      <input
+        v-model="textSizeValue" type="number" placeholder="Type here"
+        class="w-full max-w-xs input input-bordered"
+      >
+    </label>
+    <label class="w-full max-w-xs form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.highlightColor') }}</span>
+      </div>
+      <ColorPicker ref="colorPickerRef" v-model="patternColorValue" v-model:pure-color="patternColorValue" />
+    </label>
+    <label class="flex flex-row items-center w-full gap-24 mb-0 form-control">
+      <div>
+        <div class="label">
+          <span class="label-text">{{ t('table.patternSetting') }}</span>
+        </div>
+        <div class="h-auto">
+          <PatternSetting
+            :row-count="rowCount" :card-color="cardColor" :pattern-color="patternColor"
+            :pattern-list="patternList"
+          />
+        </div>
+      </div>
+    </label>
+    <div class="flex w-full h-24 gap-3 m-0">
+      <button class="mt-5 btn btn-info btn-sm" @click.stop="clearPattern">
+        <span>{{ t('button.clearPattern') }}</span>
+      </button>
+      <div class="tooltip" :data-tip="t('tooltip.defaultLayout')">
+        <button class="mt-5 btn btn-info btn-sm" @click="resetPattern">
+          <span>{{ t('button.DefaultPattern') }}</span>
+        </button>
+      </div>
+    </div>
+
+    <label class="w-full max-w-xs mb-10 form-control">
+      <div class="label">
+        <span class="label-text">{{ t('table.alwaysDisplay') }}</span>
+      </div>
+      <input
+        type="checkbox" :checked="isShowPrizeListValue" class="mt-2 border-solid checkbox checkbox-secondary border-1"
+        @change="isShowPrizeListValue = !isShowPrizeListValue"
+      >
+    </label>
+
+    <label class="w-full max-w-xs mb-10 form-control">
+        <div class="label">
+            <span class="label-text">{{ t('table.avatarDisplay') }}</span>
+        </div>
+        <input type="checkbox" :checked="isShowAvatarValue" @change="isShowAvatarValue = !isShowAvatarValue"
+          class="mt-2 border-solid checkbox checkbox-secondary border-1" />
+    </label>
+
+    <!-- 抽奖配置 -->
+    <div class="w-full max-w-xs mb-10">
+      <h3 class="text-lg font-semibold mb-4">抽奖配置</h3>
+      
+      <div class="mb-6">
+        <div class="label">
+          <span class="label-text">启用自定义抽奖人数</span>
+        </div>
+        <input 
+          type="checkbox" 
+          :checked="enableCustomCountValue" 
+          @change="enableCustomCountValue = !enableCustomCountValue"
+          class="mt-2 border-solid checkbox checkbox-secondary border-1" 
+        />
+      </div>
+
+        <div v-if="enableCustomCountValue" class="mb-6">
+        <div class="label">
+          <span class="label-text">自定义抽奖人数</span>
+        </div>
+        <input
+          v-model="customDrawCountValue"
+          type="number"
+          min="1"
+          max="50"
+          placeholder="请输入抽奖人数"
+          class="w-full max-w-xs input input-bordered"
+        />
+        <div class="text-sm text-gray-500 mt-1">
+          每次抽奖显示的人数，建议设置为10-20人
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <div class="label">
+          <span class="label-text">奖项抽完后自动切换</span>
+        </div>
+        <input
+          type="checkbox"
+          :checked="autoSwitchNextPrizeValue"
+          @change="autoSwitchNextPrizeValue = !autoSwitchNextPrizeValue"
+          class="mt-2 border-solid checkbox checkbox-secondary border-1"
+        />
+        <div class="text-sm text-gray-500 mt-2">
+          开启后，抽完当前奖项会自动切换到下一个奖项。<br>
+          关闭后，抽完奖项后需要手动切换到下一个奖项（推荐，方便节目表演）。
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang='scss' scoped></style>

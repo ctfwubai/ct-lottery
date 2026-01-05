@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "name": "快速保存-2025-12-30",
+  "createdAt": "2025-12-30T07:55:03.878Z",
+  "globalConfig": {
+    "rowCount": 17,
+    "isSHowPrizeList": true,
+    "isShowAvatar": false,
+    "topTitle": "广东卡游实业有限公司",
+    "language": "zhCn",
+    "theme": {
+      "name": "dracula",
+      "detail": {
+        "primary": "#0f5fd3"
+      },
+      "cardColor": "rgb(100, 181, 246)",
+      "cardWidth": 140,
+      "cardHeight": 200,
+      "textColor": "rgb(0, 0, 0)",
+      "luckyCardColor": "rgb(255, 171, 0)",
+      "textSize": 30,
+      "patternColor": "rgb(255, 171, 0)",
+      "patternList": [
+        21,
+        38,
+        55,
+        54,
+        53,
+        70,
+        87,
+        88,
+        89,
+        23,
+        40,
+        57,
+        74,
+        91,
+        92,
+        93,
+        76,
+        59,
+        42,
+        25,
+        24,
+        27,
+        28,
+        29,
+        46,
+        63,
+        62,
+        61,
+        78,
+        95,
+        96,
+        97,
+        20,
+        19,
+        31,
+        48,
+        65,
+        66,
+        67,
+        84,
+        101,
+        100,
+        99,
+        32,
+        33,
+        82
+      ],
+      "background": {
+        "id": "1767080138880+kayou背景图.png",
+        "name": "1767080138880+kayou背景图.png",
+        "url": "Storage"
+      },
+      "titleConfig": {
+        "fontSize": 70,
+        "fontFamily": "SourceHanSansSC-Heavy",
+        "fontUrl": "/fonts/SourceHanSansSC-Heavy.otf"
+      }
+    },
+    "musicList": [
+      {
+        "id": "Geoff Knorr - China (The Industrial Era).ogg1767080118369",
+        "name": "Geoff Knorr - China (The Industrial Era).ogg",
+        "url": "https://to2026.xyz/resource/audio/Geoff Knorr - China (The Industrial Era).ogg"
+      },
+      {
+        "id": "Geoff Knorr&Phill Boucher - China (The Atomic Era).ogg1767080118369",
+        "name": "Geoff Knorr&Phill Boucher - China (The Atomic Era).ogg",
+        "url": "https://to2026.xyz/resource/audio/Geoff Knorr&Phill Boucher - China (The Atomic Era).ogg"
+      },
+      {
+        "id": "Radetzky March.mp31767080118369",
+        "name": "Radetzky March.mp3",
+        "url": "https://to2026.xyz/resource/audio/Radetzky March.mp3"
+      },
+      {
+        "id": "Shanghai.mp31767080118369",
+        "name": "Shanghai.mp3",
+        "url": "https://to2026.xyz/resource/audio/Shanghai.mp3"
+      },
+      {
+        "id": "Waltz No.2.mp31767080118369",
+        "name": "Waltz No.2.mp3",
+        "url": "https://to2026.xyz/resource/audio/Waltz No.2.mp3"
+      },
+      {
+        "id": "WildChinaTheme.mp31767080118369",
+        "name": "WildChinaTheme.mp3",
+        "url": "https://to2026.xyz/resource/audio/WildChinaTheme.mp3"
+      },
+      {
+        "id": "边程&房东的猫 - 美好事物-再遇少年.ogg1767080118369",
+        "name": "边程&房东的猫 - 美好事物-再遇少年.ogg",
+        "url": "https://to2026.xyz/resource/audio/边程&房东的猫 - 美好事物-再遇少年.ogg"
+      },
+      {
+        "id": "大乔小乔 - 相见难别亦难.ogg1767080118369",
+        "name": "大乔小乔 - 相见难别亦难.ogg",
+        "url": "https://to2026.xyz/resource/audio/大乔小乔 - 相见难别亦难.ogg"
+      },
+      {
+        "id": "你要跳舞吗-新裤子.mp31767080118369",
+        "name": "你要跳舞吗-新裤子.mp3",
+        "url": "https://to2026.xyz/resource/audio/你要跳舞吗-新裤子.mp3"
+      },
+      {
+        "id": "生命-声音玩具.mp31767080118369",
+        "name": "生命-声音玩具.mp3",
+        "url": "https://to2026.xyz/resource/audio/生命-声音玩具.mp3"
+      },
+      {
+        "id": "与非门 - Happy New Year.ogg1767080118369",
+        "name": "与非门 - Happy New Year.ogg",
+        "url": "https://to2026.xyz/resource/audio/与非门 - Happy New Year.ogg"
+      }
+    ],
+    "imageList": [
+      {
+        "id": "0",
+        "name": "一等奖",
+        "url": "https://to2026.xyz/resource/image/image1.png"
+      },
+      {
+        "id": "1",
+        "name": "二等奖",
+        "url": "https://to2026.xyz/resource/image/image2.png"
+      },
+      {
+        "id": "2",
+        "name": "三等奖",
+        "url": "https://to2026.xyz/resource/image/image3.png"
+      },
+      {
+        "id": "3",
+        "name": "超级奖",
+        "url": "https://to2026.xyz/resource/image/image4.png"
+      },
+      {
+        "id": "4",
+        "name": "特别奖",
+        "url": "https://to2026.xyz/resource/image/image5.png"
+      },
+      {
+        "id": "1767080138880+kayou背景图.png",
+        "name": "1767080138880+kayou背景图.png",
+        "url": "Storage"
+      }
+    ],
+    "fontList": [],
+    "drawConfig": {
+      "customDrawCount": 10,
+      "enableCustomCount": false
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "name": "示例配置模板",
+  "createdAt": "2025-12-30T00:00:00.000Z",
+  "globalConfig": {
+    "rowCount": 17,
+    "isSHowPrizeList": true,
+    "isShowAvatar": false,
+    "topTitle": "大明内阁六部御前奏对",
+    "language": "zhCn",
+    "theme": {
+      "name": "dracula",
+      "detail": { "primary": "#0f5fd3" },
+      "cardColor": "#ff79c6",
+      "cardWidth": 140,
+      "cardHeight": 200,
+      "textColor": "#ffffff",
+      "luckyCardColor": "#ECB1AC",
+      "textSize": 30,
+      "patternColor": "#1b66c9",
+      "patternList": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "background": {},
+      "titleConfig": {
+        "fontSize": 60,
+        "fontFamily": "font-mono",
+        "fontUrl": ""
+      }
+    },
+    "musicList": [],
+    "imageList": [],
+    "fontList": [],
+    "drawConfig": {
+      "customDrawCount": 10,
+      "enableCustomCount": false
+    }
+  },
+  "personConfig": [],
+  "prizeConfig": []
+}

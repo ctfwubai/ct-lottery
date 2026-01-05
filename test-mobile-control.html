@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>移动端控制功能测试</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 { color: #333; }
+    h2 { color: #666; margin-top: 0; }
+    .status {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .status.success { background: #d4edda; color: #155724; }
+    .status.error { background: #f8d7da; color: #721c24; }
+    .status.pending { background: #fff3cd; color: #856404; }
+    .test-item {
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 3px solid #ccc;
+      background: #f9f9f9;
+    }
+    .test-item.pass { border-left-color: #28a745; }
+    .test-item.fail { border-left-color: #dc3545; }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover { background: #0056b3; }
+    button:disabled { background: #ccc; cursor: not-allowed; }
+    .log {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .input-group { margin: 10px 0; }
+    input {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 移动端控制功能测试</h1>
+
+  <div class="test-section">
+    <h2>配置设置</h2>
+    <div class="input-group">
+      <label>后端地址：</label>
+      <input type="text" id="serverUrl" value="http://localhost:3001">
+    </div>
+    <div class="input-group">
+      <label>验证码：</label>
+      <input type="text" id="verifyCode" value="123456">
+    </div>
+    <div class="input-group">
+      <label>设备ID：</label>
+      <input type="text" id="deviceId" value="TEST-DEVICE-001">
+    </div>
+    <button onclick="runAllTests()">运行所有测试</button>
+    <button onclick="clearLogs()">清空日志</button>
+  </div>
+
+  <div class="test-section">
+    <h2>测试结果</h2>
+    <div id="testResults"></div>
+  </div>
+
+  <div class="test-section">
+    <h2>测试日志</h2>
+    <div class="log" id="testLog"></div>
+  </div>
+
+  <script>
+    const serverUrl = document.getElementById('serverUrl').value;
+    const verifyCode = document.getElementById('verifyCode').value;
+    const deviceId = document.getElementById('deviceId').value;
+    const testResults = [];
+
+    function log(message, type = 'info') {
+      const log = document.getElementById('testLog');
+      const timestamp = new Date().toLocaleTimeString();
+      const colors = {
+        info: '#4CAF50',
+        success: '#2196F3',
+        error: '#f44336',
+        warning: '#ff9800'
+      };
+      log.innerHTML += `<div style="color: ${colors[type]}">[${timestamp}] ${message}</div>`;
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function addTestResult(name, status, message) {
+      testResults.push({ name, status, message });
+      const resultsDiv = document.getElementById('testResults');
+      resultsDiv.innerHTML += `
+        <div class="test-item ${status}">
+          <strong>${name}</strong>
+          <span class="status ${status}">${status}</span>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+
+    function clearLogs() {
+      document.getElementById('testLog').innerHTML = '';
+      document.getElementById('testResults').innerHTML = '';
+      testResults.length = 0;
+    }
+
+    async function testGetEnabled() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/enabled`);
+        const data = await response.json();
+        if (data.success) {
+          log('✓ 总开关状态：' + (data.enabled ? '已启用' : '已禁用'), 'success');
+          addTestResult('获取总开关状态', 'success', `功能${data.enabled ? '已启用' : '已禁用'}`);
+        } else {
+          throw new Error('获取失败');
+        }
+      } catch (error) {
+        log('✓ 获取总开关状态失败：' + error.message, 'error');
+        addTestResult('获取总开关状态', 'fail', error.message);
+      }
+    }
+
+    async function testVerifyCode() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/verify`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code: verifyCode,
+            device: deviceId
+          })
+        });
+        const data = await response.json();
+        if (data.success) {
+          log('✓ 验证码验证成功', 'success');
+          addTestResult('验证码验证', 'pass', '验证码正确');
+        } else {
+          throw new Error(data.error || '验证失败');
+        }
+      } catch (error) {
+        log('✗ 验证码验证失败：' + error.message, 'error');
+        addTestResult('验证码验证', 'fail', error.message);
+      }
+    }
+
+    async function testGetStatus() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/status`);
+        const data = await response.json();
+        if (data.success) {
+          log('✓ 获取状态成功', 'success');
+          log(`  - 启用：${data.enabled}`, 'info');
+          log(`  - 锁定：${data.locked}`, 'info');
+          log(`  - 抽奖页面：${data.inLotteryPage}`, 'info');
+          log(`  - 已连接：${data.connected}`, 'info');
+          addTestResult('获取大屏状态', 'pass', JSON.stringify(data));
+        } else {
+          throw new Error('获取失败');
+        }
+      } catch (error) {
+        log('✗ 获取状态失败：' + error.message, 'error');
+        addTestResult('获取大屏状态', 'fail', error.message);
+      }
+    }
+
+    async function testWebSocketConnection() {
+      return new Promise((resolve) => {
+        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const host = window.location.host || 'localhost:5173';
+        const wsUrl = `${protocol}//${host.replace('5173', '3001')}/ws/mobile-control`;
+        
+        log('正在连接 WebSocket...', 'info');
+        const ws = new WebSocket(wsUrl);
+        
+        ws.onopen = () => {
+          log('✓ WebSocket 连接成功', 'success');
+          addTestResult('WebSocket 连接', 'pass', '连接成功');
+          
+          // 发送状态
+          ws.send(JSON.stringify({
+            type: 'status',
+            data: {
+              enabled: true,
+              locked: false,
+              inLotteryPage: true
+            }
+          }));
+          
+          // 接收消息
+          ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            log('收到 WebSocket 消息：' + data.type, 'info');
+          };
+          
+          setTimeout(() => {
+            ws.close();
+            resolve();
+          }, 2000);
+        };
+        
+        ws.onerror = (error) => {
+          log('✗ WebSocket 连接失败', 'error');
+          addTestResult('WebSocket 连接', 'fail', '连接失败');
+          resolve();
+        };
+        
+        ws.onclose = () => {
+          log('WebSocket 连接已关闭', 'info');
+        };
+      });
+    }
+
+    async function testGetLogs() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/logs?limit=10`);
+        const data = await response.json();
+        if (data.success) {
+          log(`✓ 获取日志成功，共 ${data.logs.length} 条记录`, 'success');
+          addTestResult('获取操作日志', 'pass', `共 ${data.logs.length} 条记录`);
+        } else {
+          throw new Error('获取失败');
+        }
+      } catch (error) {
+        log('✗ 获取日志失败：' + error.message, 'error');
+        addTestResult('获取操作日志', 'fail', error.message);
+      }
+    }
+
+    async function testStartLottery() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/start`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ device: deviceId })
+        });
+        const data = await response.json();
+        if (data.success) {
+          log('✓ 开始抽奖指令发送成功', 'success');
+          addTestResult('开始抽奖', 'pass', '指令已发送');
+        } else {
+          log('⚠ 开始抽奖：' + data.error, 'warning');
+          addTestResult('开始抽奖', 'fail', data.error);
+        }
+      } catch (error) {
+        log('✗ 开始抽奖失败：' + error.message, 'error');
+        addTestResult('开始抽奖', 'fail', error.message);
+      }
+    }
+
+    async function testStopLottery() {
+      try {
+        const response = await fetch(`${serverUrl}/api/mobile-control/stop`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ device: deviceId })
+        });
+        const data = await response.json();
+        if (data.success) {
+          log('✓ 停止抽奖指令发送成功', 'success');
+          addTestResult('停止抽奖', 'pass', '指令已发送');
+        } else {
+          log('⚠ 停止抽奖：' + data.error, 'warning');
+          addTestResult('停止抽奖', 'fail', data.error);
+        }
+      } catch (error) {
+        log('✗ 停止抽奖失败：' + error.message, 'error');
+        addTestResult('停止抽奖', 'fail', error.message);
+      }
+    }
+
+    async function runAllTests() {
+      clearLogs();
+      log('开始运行测试...', 'info');
+
+      await testGetEnabled();
+      await new Promise(r => setTimeout(r, 500));
+      
+      await testVerifyCode();
+      await new Promise(r => setTimeout(r, 500));
+      
+      await testGetStatus();
+      await new Promise(r => setTimeout(r, 500));
+      
+      await testWebSocketConnection();
+      await new Promise(r => setTimeout(r, 1000));
+      
+      await testGetLogs();
+      await new Promise(r => setTimeout(r, 500));
+      
+      await testStartLottery();
+      await new Promise(r => setTimeout(r, 500));
+      
+      await testStopLottery();
+
+      const passed = testResults.filter(r => r.status === 'pass').length;
+      const failed = testResults.filter(r => r.status === 'fail').length;
+      log(`测试完成！通过：${passed}，失败：${failed}`, failed === 0 ? 'success' : 'error');
+    }
+
+    // 页面加载时自动运行测试
+    window.onload = () => {
+      log('测试工具已加载，点击"运行所有测试"开始测试', 'info');
+    };
+  </script>
+</body>
+</html>

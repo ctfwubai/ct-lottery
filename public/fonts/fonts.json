@@ -1,0 +1,52 @@
+{
+  "fonts": [
+    {
+      "id": "project-SourceHanSansCN-Normal.ttf",
+      "name": "SourceHanSansCN-Normal",
+      "url": "/fonts/SourceHanSansCN-Normal.ttf",
+      "fileName": "SourceHanSansCN-Normal.ttf"
+    },
+    {
+      "id": "project-SourceHanSansCN-Heavy.otf",
+      "name": "SourceHanSansCN-Heavy",
+      "url": "/fonts/SourceHanSansCN-Heavy.otf",
+      "fileName": "SourceHanSansCN-Heavy.otf"
+    },
+    {
+      "id": "project-SourceHanSansCN-Light.otf",
+      "name": "SourceHanSansCN-Light",
+      "url": "/fonts/SourceHanSansCN-Light.otf",
+      "fileName": "SourceHanSansCN-Light.otf"
+    },
+    {
+      "id": "project-SourceHanSansCN-Medium.otf",
+      "name": "SourceHanSansCN-Medium",
+      "url": "/fonts/SourceHanSansCN-Medium.otf",
+      "fileName": "SourceHanSansCN-Medium.otf"
+    },
+    {
+      "id": "project-SourceHanSansCN-Normal.otf",
+      "name": "SourceHanSansCN-Normal",
+      "url": "/fonts/SourceHanSansCN-Normal.otf",
+      "fileName": "SourceHanSansCN-Normal.otf"
+    },
+    {
+      "id": "project-SourceHanSansSC-Heavy.otf",
+      "name": "SourceHanSansSC-Heavy",
+      "url": "/fonts/SourceHanSansSC-Heavy.otf",
+      "fileName": "SourceHanSansSC-Heavy.otf"
+    },
+    {
+      "id": "project-SourceHanSansSC-Medium.otf",
+      "name": "SourceHanSansSC-Medium",
+      "url": "/fonts/SourceHanSansSC-Medium.otf",
+      "fileName": "SourceHanSansSC-Medium.otf"
+    },
+    {
+      "id": "project-SourceHanSansSC-Normal.otf",
+      "name": "SourceHanSansSC-Normal",
+      "url": "/fonts/SourceHanSansSC-Normal.otf",
+      "fileName": "SourceHanSansSC-Normal.otf"
+    }
+  ]
+}
